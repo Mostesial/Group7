@@ -21,11 +21,7 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-<<<<<<< Updated upstream
-    "navigationBarBackgroundColor": "#fff",
-=======
     "navigationBarBackgroundColor": "#fcf",
->>>>>>> Stashed changes
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
