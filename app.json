@@ -6,7 +6,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000fff",
-    "navigationBarTitleText": "Group7",
+    "navigationBarTitleText": "Today",
     "navigationBarTextStyle":"white"
   },
   "style": "v2",
