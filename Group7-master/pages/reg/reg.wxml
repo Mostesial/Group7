@@ -23,10 +23,10 @@
 
 <checkbox-group bindchange="checkboxChange">
       <label class="checkbox">
-        <checkbox class="round yellow" value="cc" checked="{{checked}}" /> 
-        <text style="color:#333366" bindtap="agreement">我已同意《幼鸟指南用户协议》 
-        </text> 
-      </label>
+        <checkbox class="round yellow" value="cc" checked="{{checked}}" />  
+      </label>  
+      <text style="color:#333366" bindtap="agreement">   我已同意《幼鸟指南用户协议》 
+      </text>    
 </checkbox-group>
 
          

@@ -5,8 +5,7 @@ Page({
     username: '',
     password: '',
     minname: '',
-    checked: '',
-    disabled:true
+    gouxuan:'',
   },
   agreement:function(){
     wx.navigateTo({
@@ -15,18 +14,9 @@ Page({
   },
   checkboxChange:function(e){
     console.log('checkbox发生change事件，携带value值为：', e.detail.value)
-    let val = e.detail.value
-    if(val.length>0){
-      this.setData({
-        checked:true,
-        disabled:false
-      })
-    }else{
-      this.setData({
-        checked:false,
-        disabled:true
-      })
-    }
+    this.setData({
+      gouxuan:e.detail.value,
+    })
   },
   PickerChange(e) {
     console.log(e);
@@ -54,6 +44,7 @@ Page({
       username,
       password,
       minname,
+      gouxuan,
     } = this.data;
     if(username=="") {
       wx.showToast({
@@ -71,6 +62,13 @@ Page({
     else if(minname=="") {
       wx.showToast({
         title:"昵称不能为空",
+        icon: 'error',
+        mask:true,  
+      }); 
+    } 
+    else if(gouxuan=="") {
+      wx.showToast({
+        title:"请勾选用户协议",
         icon: 'error',
         mask:true,  
       }); 
