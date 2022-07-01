@@ -1,20 +1,2 @@
-
-<text style="position: fixed; left: 244rpx; top: 373rpx">{{motto}}</text>
-<text style="position: relative; left: 282rpx; top: 401rpx">{{motto1}}</text>
-<icon style="position: relative; left: 134rpx; top: 596rpx" type="success" size="46"></icon>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--pages/index/index.wxml-->
+<text>这是加载页，展示背景动画</text>
