@@ -1,1 +1,55 @@
 /* pages/index/index.wxss */
+.logo{
+  position: absolute;
+  width: 83.2vw;
+  height: 38.4vh;
+  margin-left: 11.2vw;
+  margin-top: 10.8vh;
+  opacity: 0;
+}
+.title{
+  position: absolute;
+  width: 42.1vw;
+  margin-left: 31.2vw;
+  margin-top: 36.6vh;
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bottom{
+  position: absolute;
+  width: 45.6vw;
+  margin-left: 25.5vw;
+  margin-top: 96.8vh;
+  text-align: center;
+  font-size: small;
+}
+.redC{
+  position: absolute;
+  width: 177px;
+  height: 177px;
+  margin-left: -117px;
+  margin-top: -239px;
+}
+.pinkC1{
+  position: absolute;
+  width: 573px;
+  height: 573px;
+  margin-left: 179px;
+  margin-top: -565px;
+}
+.pinkC2{
+  position: absolute;
+  width: 95.1vw;
+  height: 44vh;
+  margin-left: -46.7vw;
+  margin-top: 97.8vh;
+}
+.purpleC{
+  position: absolute;
+  width: 86.4vw;
+  height: 40vh;
+  margin-left: 69.6vw;
+  margin-top: 101.3vh;
+}
+

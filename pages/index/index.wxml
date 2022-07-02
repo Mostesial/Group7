@@ -1,2 +1,16 @@
 <!--pages/index/index.wxml-->
-<text>这是加载页，展示背景动画</text>
+<view animation="{{animationData1}}">
+<image class='redC' src='/images/index/redC.png'></image>
+</view>
+<view animation="{{animationData2}}">
+<image class='pinkC1' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData3}}">
+<image class='pinkC2' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData4}}">
+<image class='purpleC' src='/images/index/purpleC.png'></image>
+</view>
+<image src='/images/index/Logo.png' class="logo"  animation="{{animationData5}}"></image>
+<view class="title"><text>幼鸟指南\nYOUNG GUIDE</text></view>
+<view class="bottom" animation="{{animationData6}}"><text>幼鸟指南 · provided by bmers</text></view>
