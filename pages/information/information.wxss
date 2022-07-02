@@ -34,12 +34,9 @@
 /**选项picker的字体大小、颜色、边框颜色、圆角**/
 
 .enter{
-  margin-left: 140rpx;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500rpx;
-  height: 90rpx;
   margin-top: 350rpx;
   color:#333366;
   font-weight: bold;

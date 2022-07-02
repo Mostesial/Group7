@@ -35,4 +35,4 @@
   </picker>
 </view>
 
-<view class="enter">Enter</view>
+<button class="enter">Enter</button>
