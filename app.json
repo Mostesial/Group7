@@ -3,6 +3,7 @@
     "pages/food/food",
     "pages/index/index",
     "pages/logs/logs",
+    "pages/Milk/Milk",
     "pages/information/information"
   ],
   "tabBar": {
