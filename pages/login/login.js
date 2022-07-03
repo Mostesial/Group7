@@ -1,65 +1,93 @@
 // pages/login/login.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    animationlogo: {},
+    animationpurpleC1:{},
+    animationpurpleC2:{},
+    animationredC:{},
+    animationpinkC:{}
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  onShow: function(){
+    var animation1 = wx.createAnimation({
+      duration: 2000,
+      timingFunction: 'linear',
+    })
+    var animation2 = wx.createAnimation({
+      duration: 2000,
+      timingFunction: 'linear',
+    })
+    var animation3 = wx.createAnimation({
+      duration: 2000,
+      timingFunction: 'linear',
+    })
+    var animation4 = wx.createAnimation({
+      duration: 2000,
+      timingFunction: 'linear',
+    })
+    var animation5 = wx.createAnimation({
+      duration: 700,
+      timingFunction: 'linear',
+    })
+    this.animation = animation1
+    setTimeout(function() {
+      animation1.translate(-100,100).step()
+      this.setData({
+        animationpurpleC1:animation1.export()
+      })
+    }.bind(this), 200)
+    this.animation = animation2
+    setTimeout(function() {
+      animation2.translate(20,-400).step()
+      this.setData({
+        animationpurpleC2:animation2.export()
+      })
+    }.bind(this), 200)
+    this.animation = animation3
+    setTimeout(function() {
+      animation3.translate(-70,0).step()
+      this.setData({
+        animationredC:animation3.export()
+      })
+    }.bind(this), 200)
+    this.animation = animation4
+    setTimeout(function() {
+      animation4.translate(-80,-450).step()
+      this.setData({
+        animationpinkC:animation4.export()
+      })
+    }.bind(this), 200)
+    this.animation = animation5
+    setTimeout(function() {
+      animation5.scale(0.7,0.7).step()
+      this.setData({
+        animationlogo:animation5.export()
+      })
+    }.bind(this), 200)
+  },
   onLoad(options) {
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
   onUnload() {
 
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
   onPullDownRefresh() {
 
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
   onReachBottom() {
 
   },
 
-  /**
-   * 用户点击右上角分享
-   */
   onShareAppMessage() {
 
   }

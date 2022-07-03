@@ -1,55 +1,56 @@
 /* pages/index/index.wxss */
-.logo{
-  position: absolute;
-  width: 83.2vw;
-  height: 38.4vh;
-  margin-left: 11.2vw;
-  margin-top: 10.8vh;
+.con-logo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{ 
+  width: 624rpx;
+  height: 624rpx;
   opacity: 0;
 }
 .title{
   position: absolute;
-  width: 42.1vw;
-  margin-left: 31.2vw;
-  margin-top: 36.6vh;
+  margin-top: 300rpx;
   text-align: center;
   font-size: large;
+  font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .bottom{
-  position: absolute;
-  width: 45.6vw;
-  margin-left: 25.5vw;
-  margin-top: 96.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: small;
+  margin-top: 750rpx;
 }
 .redC{
   position: absolute;
-  width: 177px;
-  height: 177px;
-  margin-left: -117px;
-  margin-top: -239px;
+  width: 310rpx;
+  height: 310rpx;
+  margin-left: -205rpx;
+  margin-top: -419rpx;
 }
 .pinkC1{
   position: absolute;
-  width: 573px;
-  height: 573px;
-  margin-left: 179px;
-  margin-top: -565px;
+  width: 1000rpx;
+  height: 1000rpx;
+  margin-left: 314rpx;
+  margin-top: -990rpx;
 }
 .pinkC2{
   position: absolute;
-  width: 95.1vw;
-  height: 44vh;
-  margin-left: -46.7vw;
-  margin-top: 97.8vh;
+  width: 713rpx;
+  height: 713rpx;
+  margin-left: -350rpx;
+  margin-top: 1600rpx;
 }
 .purpleC{
   position: absolute;
-  width: 86.4vw;
-  height: 40vh;
-  margin-left: 69.6vw;
-  margin-top: 101.3vh;
+  width: 648rpx;
+  height: 648rpx;
+  margin-left: 525rpx;
+  margin-top: 1650rpx;
 }
 

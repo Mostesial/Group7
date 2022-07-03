@@ -1,2 +1,13 @@
 <!--pages/reg/reg.wxml-->
-<text>这里是注册界面，实现注册功能</text>
+<view animation="{{animationData1}}">
+<image class='redC' src='/images/index/redC.png'></image>
+</view>
+<view animation="{{animationData2}}">
+<image class='pinkC1' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData3}}">
+<image class='pinkC2' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData4}}">
+<image class='purpleC' src='/images/index/purpleC.png'></image>
+</view>

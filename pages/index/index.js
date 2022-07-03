@@ -71,13 +71,11 @@ Page({
     }.bind(this), 200)
     this.animation = animation6
     setTimeout(function() {
-      animation6.translate(0,-80).step()
+      animation6.translate(0,-120).step()
       this.setData({
         animationData6:animation6.export()
       })
     }.bind(this), 0)
   },
-  
-
 })
 

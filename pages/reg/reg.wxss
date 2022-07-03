@@ -1,1 +1,29 @@
 /* pages/reg/reg.wxss */
+.redC{
+  position: absolute;
+  width: 310rpx;
+  height: 310rpx;
+  margin-left: -205rpx;
+  margin-top: -419rpx;
+}
+.pinkC1{
+  position: absolute;
+  width: 1000rpx;
+  height: 1000rpx;
+  margin-left: 314rpx;
+  margin-top: -990rpx;
+}
+.pinkC2{
+  position: absolute;
+  width: 713rpx;
+  height: 713rpx;
+  margin-left: -350rpx;
+  margin-top: 1600rpx;
+}
+.purpleC{
+  position: absolute;
+  width: 648rpx;
+  height: 648rpx;
+  margin-left: 525rpx;
+  margin-top: 1650rpx;
+}

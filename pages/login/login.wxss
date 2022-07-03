@@ -1,1 +1,49 @@
 /* pages/login/login.wxss */
+.con-logo{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 150rpx;
+}
+.logo{
+  position: absolute;
+  width: 380rpx;
+  height: 380rpx;
+  opacity: 1;
+}
+.title{
+  position: absolute;
+  margin-top: 300rpx;
+  font-size: large;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.purpleC1{
+  position:absolute;
+  width: 825rpx;
+  height: 825rpx;
+  margin-left: 386rpx;
+  margin-top: -885rpx;
+}
+
+.redC{
+  position: absolute;
+  width: 310rpx;
+  height: 310rpx;
+  margin-left: 773rpx;
+  margin-top: 400rpx;
+}
+.purpleC2{
+  position:absolute;
+  width: 650rpx;
+  height: 650rpx;
+  margin-left: -325rpx;
+  margin-top: 1660rpx;
+}
+.pinkC{
+  position:absolute;
+  width: 450rpx;
+  height: 450rpx;
+  margin-left: 676rpx;
+  margin-top: 1750rpx;
+}
