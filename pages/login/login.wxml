@@ -1,5 +1,5 @@
 <!--index.wxml-->
-  <image class='logo' src="/images/logo.png"></image>
+  <image class='logo' src="/images/login/logo.png"></image>
   <view class='youngguide'>YOUNG GUIDE</view>
     <view class='zhanghao' >账号</view>
     <input value="{{username}}" bindinput="inputUsername" class="info-input"placeholder="请输入注册邮箱" placeholder-style='color=#999999' />
@@ -7,6 +7,6 @@
     <input value="{{password}}" bindinput="inputPassword" class="info-input" placeholder="请输入登录密码" placeholder-style='color=#999999'/>
 
    <view class="bottom">
-     <button bindtap="login" class="login" ><image class="loginimage" src="/images/picoflogin.png"></image></button>
-     <button bindtap="register" class="login"><image class="registerimage" src="/images/picofreg.png"></image></button>
+     <button bindtap="login" class="login" ><image class="loginimage" src="/images/login/picoflogin.png"></image></button>
+     <button bindtap="register" class="login"><image class="registerimage" src="/images/login/picofreg.png"></image></button>
    </view>

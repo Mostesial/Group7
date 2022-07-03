@@ -18,12 +18,7 @@ Page({
       password: e.detail.value,
     })
   },
-  login(){
-    wx.navigateTo({
-      url: '../message/message?message='+this.data.username,
-    })
 
-  }
 
 })
 
