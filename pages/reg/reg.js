@@ -1,66 +1,88 @@
-// pages/reg/reg.js
+const app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    picker: ['中国大陆', '香港', '澳门','中国台湾'],
+    username: '',
+    password: '',
+    minname: '',
+    gouxuan:'',
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  agreement:function(){
+    wx.navigateTo({
+      url:"/pages/幼鸟指南用户协议/幼鸟指南用户协议"
+    }) 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  checkboxChange:function(e){
+    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+    this.setData({
+      gouxuan:e.detail.value,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  PickerChange(e) {
+    console.log(e);
+    this.setData({
+      index: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  inputUsername(e) {
+    this.setData({
+      username: e.detail.value,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
+  inputPassword(e) {
+    this.setData({
+      password: e.detail.value,
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
+  inputMinname(e) {
+    this.setData({
+      minname: e.detail.value,
+    })
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  register(){
+    const {
+      username,
+      password,
+      minname,
+      gouxuan,
+    } = this.data;
+    if(username=="") {
+      wx.showToast({
+        title:"用户名不能为空",
+        icon: 'error',
+        mask:true,  
+      }); 
+    }
+    else if(password=="") {
+      wx.showToast({
+        title:"密码不能为空",
+        icon: 'error',
+      }); 
+    }
+    else if(minname=="") {
+      wx.showToast({
+        title:"昵称不能为空",
+        icon: 'error',
+        mask:true,  
+      }); 
+    } 
+    else if(gouxuan=="") {
+      wx.showToast({
+        title:"请勾选用户协议",
+        icon: 'error',
+        mask:true,  
+      }); 
+    } 
+    else {
+      wx.showToast({
+        title:"注册成功",
+        icon: 'success',
+        duration:5000,
+        mask:true,
+      });
+      wx.redirectTo({
+        url:"/pages/login/login",
+      })
+      }   
   }
 })

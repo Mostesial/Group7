@@ -20,16 +20,16 @@ page {
 	--green: #39b54a;
 	--cyan: #1cbbb4;
 	--blue: #0081ff;
-	--purple: #6739b6;
+	--purple: #333366;
 	--mauve: #9c26b0;
-	--pink: #e03997;
+	--pink: #ffcccc;
 	--brown: #a5673f;
 	--grey: #8799a3;
 	--black: #333333;
 	--darkGray: #666666;
 	--gray: #aaaaaa;
 	--ghostWhite: #f1f1f1;
-	--white: #ffffff;
+  --white: #ffffff;
 	/* 浅色 */
 	--redLight: #fadbd9;
 	--orangeLight: #fde6d2;
@@ -198,13 +198,13 @@ checkbox::before {
 	color: var(--white) !important;
 	top: 50%;
 	margin-top: -8px;
-	right: 5px;
-	font-size: 32rpx;
+	right: 3px;
+	font-size: 20rpx;
 	line-height: 16px;
 	pointer-events: none;
 	transform: scale(1, 1);
 	transition: all 0.3s ease-in-out 0s;
-	z-index: 9;
+  z-index: 9;
 }
 
 radio .wx-radio-input,
@@ -213,9 +213,10 @@ checkbox .wx-checkbox-input {
 	width: 24px;
 	height: 24px;
 }
-
 checkbox.round .wx-checkbox-input {
-	border-radius: 100rpx;
+  border-radius: 100rpx;
+  height: 25rpx;
+  width: 25rpx;
 }
 
 switch .wx-switch-input {
@@ -224,7 +225,8 @@ switch .wx-switch-input {
 	width: 48px;
 	height: 26px;
 	margin: 0;
-	border-radius: 100rpx;
+  border-radius: 100rpx;
+  
 }
 
 switch .wx-switch-input:not([class*="bg-"]) {
@@ -746,8 +748,10 @@ radio.white[checked] .wx-radio-input {
 
 .cu-btn.lg {
 	padding: 0 40rpx;
-	font-size: 32rpx;
-	height: 80rpx;
+  font-size: 45rpx;
+  font-weight:lighter;
+  height: 100rpx;
+  width:600rpx;
 }
 
 .cu-btn.icon.sm {
@@ -2406,35 +2410,34 @@ button.icon.lg {
 }
 
 .cu-form-group picker {
-	flex: 1;
-	padding-right: 40rpx;
-	overflow: hidden;
-	position: relative;
+	flex:1;
+	overflow:hidden;
+  position:relative;
 }
 
 .cu-form-group picker .picker {
 	line-height: 100rpx;
-	font-size: 28rpx;
+  font-size: 30rpx;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	width: 100%;
-	text-align: right;
+  text-align: left;
 }
 
 .cu-form-group picker::after {
 	font-family: "cuIcon";
-	display: block;
-	content: "\e6a3";
+	display:block;
+	content: "\e79b";
 	position: absolute;
-	font-size: 34rpx;
+	font-size: 40rpx;
 	color: var(--grey);
 	line-height: 100rpx;
 	width: 60rpx;
 	text-align: center;
 	top: 0;
 	bottom: 0;
-	right: -20rpx;
+	right: -10rpx;
 	margin: auto;
 }
 

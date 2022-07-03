@@ -1,3 +1,4 @@
 {
-  "usingComponents": {}
+  "Components": true,
+  "navigationBarTitleText": "注册界面"
 }
