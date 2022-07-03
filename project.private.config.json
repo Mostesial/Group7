@@ -1,5 +1,5 @@
 {
-  "projectname": "%E7%A8%8B%E5%BA%8F%E5%AD%98%E6%94%BE",
+  "projectname": "login",
   "setting": {
     "compileHotReLoad": true
   },
@@ -8,29 +8,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "主页展示",
-          "pathName": "pages/index/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "登录界面展示",
+          "name": "",
           "pathName": "pages/login/login",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "注册界面展示",
-          "pathName": "pages/reg/reg",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "身份信息界面展示",
-          "pathName": "pages/logs/logs",
           "query": "",
           "launchMode": "default",
           "scene": null

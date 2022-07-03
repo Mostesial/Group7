@@ -1,9 +1,5 @@
-// pages/logs/logs.js
+// logs.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     sex:['妈妈','爸爸'],
     babysex:['男孩','女孩'],
