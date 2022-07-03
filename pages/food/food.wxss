@@ -1,0 +1,89 @@
+/* pages/technology/technology.wxss */
+.text{
+  display: flex;
+  margin-left: 32%;
+  margin-top: 20%;
+  font-size: 25px;
+  font-style: unset;
+  font-weight: bolder;
+  color: rgb(51,51,102);
+  height: 50px;
+}
+/*好物推荐一栏*/
+.flex-wrp{
+  width:360rpx; 
+  height:570rpx;
+  text-align:left;
+}
+.flex-wrp-group{
+margin-top: 5rpx;
+display:flex;
+}
+page{
+  background-color:rgb(255, 255, 255);
+  margin-top:4%;
+  min-width: width 80px; 
+}
+/*其他科普一栏*/
+.section{
+  margin-top: 12rpx;
+  margin-left: 12rpx;
+  width:690rpx;
+  padding: 20rpx;
+  background-color: #fcf0f0;
+  border-radius: 25rpx;
+}
+.section .title{
+  font-weight: bold;
+  font-size: 35rpx;
+}
+.section .content{
+  margin-top: 5rpx;
+  font-weight: bold;
+  color:#666666;
+  font-size: 25rpx;
+}
+.contentimage image{
+  box-sizing: border-box;
+  width: 675rpx;
+  height: 400rpx;
+}
+.contentimage1 image{
+  box-sizing: border-box;
+  width: 675rpx;
+  height: 1000rpx;
+}
+.section .other{
+  margin-top: 5rpx;
+  font-weight: bold;
+  padding: 5rpx;
+  font-size: 25rpx;
+  color: #999999;
+  flex-wrap: nowrap;
+}
+.other .comment{
+  justify-content: flex-start;
+}
+.other .more{
+  margin-left: 650rpx;
+}
+.myvideo{
+  margin-top: 10rpx;
+}
+video{
+  width:100%;
+  height:400rpx;
+}
+.people{
+  margin-top: 5rpx;
+}
+.people image{
+  box-sizing: border-box;
+  width: 150rpx;
+  height: 50rpx;
+}
+.loading{
+  color: #ffcccc;
+  margin-top: 15rpx;
+  margin-left: 275rpx;
+}

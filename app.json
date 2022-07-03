@@ -1,7 +1,9 @@
 {
-  "pages":[
+  "pages": [
+    "pages/food/food",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/information/information"
   ],
   "tabBar": {
     "list": [
@@ -19,11 +21,11 @@
       }
     ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fcf",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
