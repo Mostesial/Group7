@@ -10,3 +10,12 @@
      <button bindtap="login" class="login" ><image class="loginimage" src="/images/login/picoflogin.png"></image></button>
      <button bindtap="register" class="login"><image class="registerimage" src="/images/login/picofreg.png"></image></button>
    </view>
+<!--pages/login/login.wxml-->
+<image animation="{{animationpurpleC1}}" class="purpleC1" src="/images/login/purpleC.png"></image>
+<image animation="{{animationpurpleC2}}" class="purpleC2" src="/images/login/purpleC.png"></image>
+<image animation="{{animationredC}}" class="redC" src="/images/login/redC.png"></image>
+<image animation="{{animationpinkC}}" class="pinkC" src="/images/login/pinkC.png"></image>
+<view class="con-logo">
+<image animation="{{animationlogo}}" class="logo" src="/images/index/Logo.png"></image>
+<text class="title">YOUNG GUIDE</text>
+</view>

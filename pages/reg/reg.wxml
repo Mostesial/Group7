@@ -32,3 +32,15 @@
          
             
 
+<view animation="{{animationData1}}">
+<image class='redC' src='/images/index/redC.png'></image>
+</view>
+<view animation="{{animationData2}}">
+<image class='pinkC1' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData3}}">
+<image class='pinkC2' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData4}}">
+<image class='purpleC' src='/images/index/purpleC.png'></image>
+</view>
