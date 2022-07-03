@@ -1,0 +1,77 @@
+<!--index.wxml-->
+<view class="cu-bar bg-white">
+    <view class="action">
+      <text class="cuIcon-back text-gray"></text> 
+    </view>
+    <view class="content text-bold">
+      REMIND
+    </view>
+  </view>
+<view class="remind-container">
+  <view class="cu-form-group">
+		<view class="title">名称:</view>
+		<input placeholder="健身"></input>
+	</view>
+
+  <view class="cu-form-group">
+		<view class="title">时间：</view>
+		<picker mode="date" value="{{date}}" start="2022-01-01" end="2024-09-01" bindchange="DateChange">
+			<view class="picker">
+				{{date}}
+			</view>
+		</picker>
+	</view>
+
+  <view class="time-container">
+  	<view class="cu-form-group">
+		<view class="title">开始：</view>
+		<picker mode="time" value="{{time1}}" start="00:00" end="23:59" bindchange="TimeChange1">
+			<view class="picker">
+				{{time1}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">结束：</view>
+		<picker mode="time" value="{{time2}}" start="00:00" end="23:59" bindchange="TimeChange2">
+			<view class="picker">	{{time2}}	</view>
+		</picker>
+	</view>
+  </view>
+
+  <view class="cu-form-group">
+		<view class="title"> 位置:</view>
+		<input placeholder="妈妈身材恢复私教工作室"></input>
+	</view>
+
+	<view class="cu-form-group margin-top">
+		<view class="title">通知：</view>
+		<picker bindchange="PickerChange1" value="{{index1}}" range="{{picker1}}">
+			<view class="picker1">
+				{{index1?picker1[index1]:'提醒方式'}}
+			</view>
+		</picker>
+	</view>
+
+	<view class="cu-form-group margin-top">
+		<view class="title">参与人：</view>
+		<picker bindchange="PickerChange3" value="{{index3}}" range="{{picker3}}">
+			<view class="picker3">
+				{{index3?picker3[index3]:'参与人'}}
+			</view>
+		</picker>
+	</view>
+
+	<view class="cu-form-group margin-top">
+		<view class="title">重复：</view>
+		<picker bindchange="PickerChange2" value="{{index2}}" range="{{picker2}}">
+			<view class="picker2">
+				{{index2?picker2[index2]:'重复'}}
+			</view>
+		</picker>
+	</view>
+</view>
+<view class="ebutton">
+  <button class="cu-btn round" style="width: 210.3rpx ;height:84.1rpx;background-color: #333366;color:#ffcccc">
+  确认</button>
+</view>
