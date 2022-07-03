@@ -41,11 +41,12 @@
       "outputPath": ""
     },
     "disableUseStrict": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
-  "appid": "wxf8e38a7f5b92680e",
+  "appid": "wx695a162f3d11f571",
   "projectname": "miniprogram-92",
   "condition": {},
   "editorSetting": {

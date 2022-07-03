@@ -1,2 +1,6 @@
-<!--pages/logs/logs.wxml-->
-<text>这里是身份信息界面，展示身份信息</text>
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log.date}}</text>
+  </block>
+</view>

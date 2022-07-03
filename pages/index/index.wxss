@@ -1,1 +1,71 @@
-/* pages/index/index.wxss */
+/**index.wxss**/
+.logo{
+  width: 300rpx;
+  height:300rpx;
+  margin-left: -10rpx;
+  margin-top: 84px;
+}
+.zhanghao{
+  margin-left: 23px;  
+  font-size: 26;
+  font-family: 微软雅黑;
+  margin-top: 47rpx;
+}
+.mima{
+  margin-left: 23px;  
+  margin-top:24rpx;
+  font-size: 16;
+  font-family: 微软雅黑;
+}
+
+.youngguide{
+  margin-left: 23px;  
+}
+
+.info-input{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  width: 330px;
+  height: 55rpx;
+  margin-left: 23px;
+  border:2rpx solid rgb(116, 116, 121);
+  border-radius: 10%;
+}
+
+
+.login{
+  padding: 0;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+  width: 300rpx      
+  height: 90rpx;
+  margin-top: 20rpx;
+  margin-left: 23rpx;
+}
+
+.loginimage{
+      width: 300rpx;
+      height: 90rpx;
+      margin-left: 23rpx;
+}
+
+.register{
+  padding: 0;
+  background-color: transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+  width: 216rpx;      
+  height: 200rpx;
+  margin-right: -108rpx;
+}
+
+.registerimage{
+  width: 216rpx;
+  height: 200rpx;
+  margin-right: -108rpx;
+}
+
+.bottom{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
