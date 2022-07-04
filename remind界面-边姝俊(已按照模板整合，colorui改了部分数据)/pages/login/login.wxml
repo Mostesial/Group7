@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<image animation="{{animationpurpleC1}}" class="purpleC1" src="/images/login/purpleC.png"></image>
+<image animation="{{animationpurpleC2}}" class="purpleC2" src="/images/login/purpleC.png"></image>
+<image animation="{{animationredC}}" class="redC" src="/images/login/redC.png"></image>
+<image animation="{{animationpinkC}}" class="pinkC" src="/images/login/pinkC.png"></image>
+<view class="con-logo">
+<image animation="{{animationlogo}}" class="logo" src="/images/index/Logo.png"></image>
+<text class="title">YOUNG GUIDE</text>
+</view>
+    <view class='zhanghao' >账号</view>
+    <input value="{{username}}" bindinput="inputUsername" class="info-input"placeholder="请输入注册邮箱" placeholder-style='color=#999999' />
+    <view class='mima'>密码</view>
+    <input value="{{password}}" bindinput="inputPassword" class="info-input" placeholder="请输入登录密码" placeholder-style='color=#999999'/>
+   <view class="bottom">
+     <button bindtap="login" class="login" ><image class="loginimage" src="/images/login/picoflogin.png"></image></button>
+     <button bindtap="register" class="login"><image class="registerimage" src="/images/login/picofreg.png" style="position: relative; left: 2rpx; top: 0rpx"></image></button>
+   </view>
+
+
