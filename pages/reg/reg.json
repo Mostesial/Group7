@@ -1,4 +1,5 @@
 {
-  "Components": true,
+  "disableScroll": true,
+  "usingComponents": {},
   "navigationBarTitleText": "注册界面"
 }

@@ -117,7 +117,7 @@ Page({
     }.bind(this), 300)
     this.animation = animation2
     setTimeout(function() {
-      animation2.translate(0,200).step()
+      animation2.translate(0,100).step()
       this.setData({
         animationData2:animation2.export()
       })

@@ -1,4 +1,16 @@
 <!--pages/reg/reg.wxml-->
+<view animation="{{animationData1}}">
+<image class='redC' src='/images/index/redC.png'></image>
+</view>
+<view animation="{{animationData2}}">
+<image class='pinkC1' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData3}}">
+<image class='pinkC2' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData4}}">
+<image class='purpleC' src='/images/index/purpleC.png'></image>
+</view>
 <view class="text">register</view> 
 <view class="cu-form-group">
 	<input placeholder="用户名或邮箱"  value="{{username}}" bindinput="inputUsername" ></input>
@@ -28,19 +40,3 @@
       <text style="color:#333366" bindtap="agreement">   我已同意《幼鸟指南用户协议》 
       </text>    
 </checkbox-group>
-
-         
-            
-
-<view animation="{{animationData1}}">
-<image class='redC' src='/images/index/redC.png'></image>
-</view>
-<view animation="{{animationData2}}">
-<image class='pinkC1' src='/images/index/pinkC.png'></image>
-</view>
-<view animation="{{animationData3}}">
-<image class='pinkC2' src='/images/index/pinkC.png'></image>
-</view>
-<view animation="{{animationData4}}">
-<image class='purpleC' src='/images/index/purpleC.png'></image>
-</view>
