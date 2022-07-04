@@ -1,36 +1,7 @@
 /* pages/information/information.wxss */
-
-.redC{
-  position: absolute;
-  width: 310rpx;
-  height: 310rpx;
-  margin-left: -205rpx;
-  margin-top: -719rpx;
-}
-.pinkC1{
-  position: absolute;
-  width: 1000rpx;
-  height: 1000rpx;
-  margin-left: 314rpx;
-  margin-top: -1290rpx;
-}
-.pinkC2{
-  position: absolute;
-  width: 713rpx;
-  height: 713rpx;
-  margin-left: -350rpx;
-  margin-top: 1300rpx;
-}
-.purpleC{
-  position: absolute;
-  width: 648rpx;
-  height: 648rpx;
-  margin-left: 525rpx;
-  margin-top: 1350rpx;
-}
 .section1{
   display: flex;
-  margin-top: 300rpx;
+  margin-top: 150rpx;
   margin-left: 100rpx;
 }
 /**因为要调整首行距离，所以第一列单开了一个格式内容设置**/

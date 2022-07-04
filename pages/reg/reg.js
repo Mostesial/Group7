@@ -11,9 +11,9 @@ Page({
     animationData3: {},
     animationData4: {}
   },
-  agreement(e){
+  agreement:function(){
     wx.navigateTo({
-      url:"/pages/agr/agr"
+      url:"/pages/幼鸟指南用户协议/幼鸟指南用户协议"
     }) 
   },
   checkboxChange:function(e){
@@ -85,7 +85,7 @@ Page({
         mask:true,
       });
       wx.redirectTo({
-        url:"/pages/logs/logs",
+        url:"/pages/login/login",
       })
       }   
   },

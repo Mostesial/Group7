@@ -15,14 +15,14 @@ page {
 	/* 标准色 */
 	--red: #e54d42;
 	--orange: #f37b1d;
-	--yellow: #fbbd08;
+  --yellow: #fbbd08;
 	--olive: #8dc63f;
 	--green: #39b54a;
 	--cyan: #1cbbb4;
 	--blue: #0081ff;
 	--purple: #333366;
 	--mauve: #9c26b0;
-	--pink: #ffcccc;
+	--pink: #ffcccc80;
 	--brown: #a5673f;
 	--grey: #8799a3;
 	--black: #333333;
@@ -214,9 +214,9 @@ checkbox .wx-checkbox-input {
 	height: 24px;
 }
 checkbox.round .wx-checkbox-input {
-  border-radius: 100rpx;
-  height: 25rpx;
-  width: 25rpx;
+  border-radius: 10rpx;
+  height: 30rpx;
+  width: 30rpx;
 }
 
 switch .wx-switch-input {
@@ -633,7 +633,7 @@ radio.white[checked] .wx-radio-input {
 
 .shadow-warp {
 	position: relative;
-	box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.15);
 }
 
 .shadow-warp:before,

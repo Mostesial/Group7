@@ -1,5 +1,4 @@
 <!--pages/index/index.wxml-->
-<view bindtap="jump">
 <view animation="{{animationData1}}">
 <image class='redC' src='/images/index/redC.png'></image>
 </view>
@@ -17,5 +16,4 @@
 <text class="title">幼鸟指南\nYOUNG GUIDE</text>
 </view>
 <view class="bottom" animation="{{animationData6}}"><text>幼鸟指南 · provided by bmers</text></view>
-</view>
-<view class="btn" bindtap="jump"></view>
+
