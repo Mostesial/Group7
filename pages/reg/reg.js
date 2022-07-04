@@ -11,7 +11,7 @@ Page({
     animationData3: {},
     animationData4: {}
   },
-  agreement:function(){
+  agreement(e){
     wx.navigateTo({
       url:"/pages/幼鸟指南用户协议/幼鸟指南用户协议"
     }) 
@@ -85,7 +85,7 @@ Page({
         mask:true,
       });
       wx.redirectTo({
-        url:"/pages/login/login",
+        url:"/pages/logs/logs",
       })
       }   
   },

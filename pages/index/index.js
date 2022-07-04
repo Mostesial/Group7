@@ -8,6 +8,11 @@ Page({
     animationData5: {},
     animationData6: {}
   },
+  jump(e){
+    wx.navigateTo({
+      url: '/pages/login/login',
+    })
+  },
   onShow: function(){
     var animation1 = wx.createAnimation({
       duration: 1300,

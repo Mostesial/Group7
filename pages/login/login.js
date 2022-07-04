@@ -23,6 +23,11 @@ Page({
       password: e.detail.value,
     })
   },
+  register(e){
+    wx.navigateTo({
+      url: '/pages/reg/reg',
+    })
+  },
 
   onShow: function(){
     var animation1 = wx.createAnimation({
