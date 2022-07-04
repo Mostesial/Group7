@@ -1,5 +1,5 @@
 {
-  "projectname": "%E6%95%B4%E5%90%88",
+  "projectname": "login",
   "setting": {
     "compileHotReLoad": true
   },
@@ -31,13 +31,6 @@
         {
           "name": "身份信息",
           "pathName": "pages/logs/logs",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "remind界面展示",
-          "pathName": "pages/remind/remind",
           "query": "",
           "launchMode": "default",
           "scene": null

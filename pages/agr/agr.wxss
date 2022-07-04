@@ -1,0 +1,8 @@
+/* pages/幼鸟指南用户协议/幼鸟指南用户协议.wxss */
+.agreement{
+  display: flex;
+  margin-top: 20%;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
