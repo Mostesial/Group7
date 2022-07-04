@@ -13,7 +13,7 @@ Page({
   },
   agreement(e){
     wx.navigateTo({
-      url:"/pages/幼鸟指南用户协议/幼鸟指南用户协议"
+      url:"/pages/agr/agr"
     }) 
   },
   checkboxChange:function(e){
