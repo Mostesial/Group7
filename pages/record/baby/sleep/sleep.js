@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    date: '2022-07-02',
+    date: "请输入日期",
     time1: '00:00',
     time2: '24:00',
   },

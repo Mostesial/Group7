@@ -45,7 +45,7 @@
   </view>
   <view class="cu-form-group"></view>
   <view class="padding flex flex-direction">
-    <button class="cu-btn round lg bg-purple lg text-pink" bindtap="queding">确定
+    <button class="cu-btn round lg bg-purple lg text-pink" bindtap="queding" style="width: 500rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">确定
       
     </button>
   </view>	

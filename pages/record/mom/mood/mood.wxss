@@ -2,47 +2,76 @@
 page{
   background-color: #ffffff;
 }
-.riqi {
+.riqi1{
   margin-top: 37rpx;
-	background-color: var(--white);
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  background-color: var(--white);
 	padding: 1rpx 30rpx;
   display: flex;
 	align-items: center;
 	min-height: 100rpx;
-	justify-content: space-between;
+  justify-content: space-between;
+  border-bottom: 3rpx solid #f5f5f5;
+}
+.riqi2{
+  margin-top: 37rpx;
+  background-color: var(--white);
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+	padding: 1rpx 30rpx;
+  display: flex;
+	align-items: center;
+	min-height: 100rpx;
+  justify-content: space-between;
+  border-bottom: 3rpx solid #f5f5f5;
+}
+
+.riqi3{
+  margin-top: 37rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  background-color: var(--white);
+	padding: 1rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+	align-items: center;
+	min-height: 100rpx;
+  justify-content: space-between;
+  border-bottom: 3rpx solid #f5f5f5;
 }
 
 .riqi-name{
   color: #333366;
-  font-size: 30rpx;
+  font-size: 40rpx;
   font-weight: bolder;
-  margin-left: 57rpx;
+  margin-left: 30rpx;
 }
 
 .riqi-time{
   width: 500rpx;
   height: 50rpx;
+  padding-left: 10rpx;
+  padding-top: 5rpx;
   margin-right: 28rpx;
-  border: #B0B0B0;
-  border-style: solid;
-  border-width: 1rpx;
   display: flex;
   align-items: center;
 }
 
 .beizhu-name{
   color: #333366;
-  font-size: 30rpx;
+  font-size: 40rpx;
   font-weight: bolder;
-  margin-left: 57rpx;
+  margin-left: 30rpx;
 }
 
 .shuru{
-  margin-top: 40rpx;
-  border:#B0B0B0;
-  border-width: 1rpx;
-  border-style: solid;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  padding-top: 10rpx;
+  padding-left: 10rpx;
   display: flex;
+  border: 1rpx solid #b0b0b0;
 }
 
 .ebutton{

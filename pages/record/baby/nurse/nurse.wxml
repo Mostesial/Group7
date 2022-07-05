@@ -2,33 +2,32 @@
 <view>
 <MilkTabs tabs="{{tabs}}" binditemChange="ItemChange"></MilkTabs>
 </view>
+
 <view class="section1">
-  <view class="section__title" style="width: 150rpx; height: 60rpx; display: block; box-sizing: border-box">日期     </view>
-  <picker mode="date" value="{{date}}" start="2020-09-01" end="2030-09-01" bindchange="bindDateChange">
-    <view class="picker" style="width: 450rpx; height: 60rpx; display: flex; box-sizing: border-box">
-      {{date}}
-    </view>
+  <view class="section__title" style="width: 150rpx; height: 60rpx; display: block; box-sizing: border-box">日期</view>
+  <picker mode="date" value="{{date}}" start="2020-09-01" end="2130-09-01" bindchange="bindDateChange">
+		<view class="picker text-gray" style="width: 360rpx; height: 80rpx; display: flex; box-sizing: border-box">{{date}}</view>
   </picker>
 </view>
 <view class="section">
   <view class="section__title" style="width: 150rpx; height: 60rpx; display: block; box-sizing: border-box">时间     </view>
   <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-    <view class="picker" style="width: 450rpx; height: 60rpx; display: flex; box-sizing: border-box">
+    <view class="picker text-gray" style="width: 362rpx; height: 80rpx; display: flex; box-sizing: border-box">
       {{time}}
     </view>
   </picker>
 </view>
 <view class="section">
   <view class="section__title" style="width: 150rpx; height: 60rpx; display: block; box-sizing: border-box">喂奶量</view>
-  <input style="width: 400rpx; height: 60rpx; display: flex; box-sizing: border-box" type="number" class="quantity" auto-focus placeholder="请输入喂奶量">
+  <input style="width: 400rpx; height: 80rpx; display: flex; box-sizing: border-box" type="number" class="quantity" auto-focus placeholder="请输入喂奶量">
   </input>
   <text class="milkml">ml</text>
 </view>
 <view class="section">
   <view class="section__title" style="width: 150rpx; height: 60rpx; display: block; box-sizing: border-box">备注</view>
-  <input style="width: 450rpx; height: 60rpx; display: flex; box-sizing: border-box"  class="remarks" auto-focus placeholder="记录宝宝吃奶的状态吧"/>
+  <input style="width: 450rpx; height: 80rpx; display: flex; box-sizing: border-box"  class="remarks" auto-focus placeholder="记录宝宝吃奶的状态吧"/>
 </view>
 <view class="other">
-  <image src="https://s3.bmp.ovh/imgs/2022/07/03/ad10c001086616b8.jpg" style="width: 560rpx; height: 520rpx; display: inline-block; box-sizing: border-box; position: relative; left: 0rpx; top: 4rpx"></image>
+  <image src="https://s3.bmp.ovh/imgs/2022/07/03/ad10c001086616b8.jpg" style="width: 560rpx; height: 520rpx; display: inline-block; box-sizing: border-box; position: relative; left: 0rpx; top: 30rpx"></image>
 </view>
-<button class="determine">确定</button>
+<button class="determine" style="position: relative; left: 0rpx; top: 50rpx; width: 500rpx; height: 80rpx; display: block; box-sizing: border-box">确定</button>

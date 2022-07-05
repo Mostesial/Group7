@@ -8,24 +8,22 @@
     </view>
 </view>
 
-<view class="riqi">   
+<view class="riqi1">   
     <view class="riqi-name">日期</view>
-      <picker style="font-size: 30rpx; width: 453rpx; height: 51rpx; display: flex; box-sizing: border-box" mode="date" class="riqi-time" value="{{date}}" start="2022-01-01" end="2024-09-01" bindchange="DateChange">
-			<view class="picker"  style="width: 256rpx; height: 44rpx; display: block; box-sizing: border-box">
+      <picker style="font-size: 35rpx; width: 453rpx; height: 51rpx; display: flex; box-sizing: border-box" mode="date" class="riqi-time" value="{{date}}" start="2022-01-01" end="2024-09-01" bindchange="DateChange">
+			<view class="picker"  style="width: 256rpx; height: 44rpx; display: block; box-sizing: border-box;margin-left: 40rpx;">
 				{{date}}
 			</view>
       </picker>
   </view>
 
-  <view class="riqi">    
+  <view class="riqi2" style="width: 650rpx; height: 250rpx; display: flex; box-sizing: border-box">    
   <view class="beizhu-name">日记</view>
-  <textarea class="shuru" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="记录一下今天的心情吧"  style="position: relative; left: -26rpx; top: 4rpx; width: 454rpx; height: 180rpx; display: block; box-sizing: border-box" placeholder-class="shurun-name"></textarea>
+  <textarea class="shuru" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="记录一下今天的心情吧"  style="position: relative; left: -26rpx; top: 0rpx; width: 410rpx; height: 176rpx; display: block; box-sizing: border-box;font-size: 35rpx;" placeholder-class="shurun-name"></textarea>
 </view>
 
-<view class="riqi">
+<view class="riqi3">
 <view class="beizhu-name">心情</view>
-</view>
-
 <view class="mood-choice" style="width: 750rpx; height: 512rpx; display: block; box-sizing: border-box">
 <view class="mood-1">
 <button class="b-1" class="c-1" style="width: 213rpx; position: relative; left: -150rpx; top: 0rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic1.png" class="pic"></image> </button>
@@ -39,6 +37,9 @@
 <button class="b-8" style="width: 213rpx; position: relative; left: 28rpx; top: -789rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic8.png" class="pic"></image> </button>
 <button class="b-9" style="width: 213rpx; position: relative; left: 203rpx; top: -947rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic9.png" class="pic" style="position: relative; left: -6rpx; top: 0rpx"></image> </button>
 </view>
+</view>
+
+
 
 <view class="ebutton">
   <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 106rpx">
