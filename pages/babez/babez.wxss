@@ -1,0 +1,115 @@
+.text{
+  padding-top: 5%;
+  padding-left: 35%;
+  font-size:50rpx;
+  font-style:initial;
+  font-weight:bolder;
+  color:#333366;
+  height: 50px;
+}
+.text1{
+  padding-top: 5%;
+  padding-left: 8%;
+  font-size:40rpx;
+  font-style:initial;
+  font-weight:bolder;
+  color:pink;
+  height: 50px;
+}
+.text2{
+  padding-top: 5%;
+  padding-left: 8%;
+  font-size:40rpx;
+  font-style:initial;
+  font-weight:bolder;
+  color:#333366;
+  height: 50px;
+}
+.text3{
+  padding-top: 5%;
+  padding-left: 8%;
+  font-size:40rpx;
+  font-style:initial;
+  font-weight:bolder;
+  color:#333366;
+  height: 50px;
+}
+.text4{
+  margin-top: 2%;
+  margin-left: 10%;
+  font-size:35rpx;
+  font-style:initial;
+  font-weight:bolder;
+  color:#333366;
+  height: 50px;
+}
+.nav1 {
+  white-space: nowrap;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+.nav1 .cu-item {
+	display:-moz-inline-grid;
+	line-height: 90rpx;
+ padding-left: 0%;
+ margin-left: 5%;
+
+}
+.nav1 .cu-item.cur {
+  border-bottom: 9rpx solid;
+  border-color:#ff3333;
+}
+.shape {
+  white-space: nowrap;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+.shape2 {
+  white-space: nowrap;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+.shape3 {
+  white-space: nowrap;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+.shape4 {
+  white-space: nowrap;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+
+page{
+  background-color:rgb(255, 255, 255);
+  margin-top:4%;
+  min-width: width 80rrpx; 
+}

@@ -1,0 +1,5 @@
+<!--components/search/search.wxml-->
+<view class="search">
+  <input class="searchinput" auto-focus placeholder="母婴科普，看你想看"/>
+  <image src="https://s3.bmp.ovh/imgs/2022/07/02/d6c4c3dfdc0f386f.png"></image>
+</view>

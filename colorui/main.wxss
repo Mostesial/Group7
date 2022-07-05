@@ -9,11 +9,11 @@
 /* ==================
         初始化
  ==================== */
-page {
+ page {
 	/* Color 可以自定义相关配色 */
 	/* var属性兼容性 --> https://www.caniuse.com/#feat=css-variables */
 	/* 标准色 */
-	--red: #e54d42;
+	--red: #ffcccc;
 	--orange: #f37b1d;
 	--yellow: #fbbd08;
 	--olive: #8dc63f;
@@ -27,7 +27,7 @@ page {
 	--grey: #8799a3;
 	--black: #333333;
 	--darkGray: #666666;
-	--gray: #aaaaaa;
+	--gray: #7e7e7e;
 	--ghostWhite: #f1f1f1;
   --white: #ffffff;
 	/* 浅色 */
@@ -198,13 +198,13 @@ checkbox::before {
 	color: var(--white) !important;
 	top: 50%;
 	margin-top: -8px;
-	right: 3px;
+	right: 1px;
 	font-size: 20rpx;
-	line-height: 16px;
+	line-height: 17px;
 	pointer-events: none;
 	transform: scale(1, 1);
 	transition: all 0.3s ease-in-out 0s;
-  z-index: 9;
+  z-index: 8;
 }
 
 radio .wx-radio-input,
@@ -1990,7 +1990,7 @@ button.icon.lg {
          导航栏
  ==================== */
 
-.nav {
+.nav1 {
 	white-space: nowrap;
 }
 
@@ -1998,15 +1998,148 @@ button.icon.lg {
 	display: none;
 }
 
-.nav .cu-item {
+.nav1 .cu-item {
 	height: 90rpx;
 	display: inline-block;
 	line-height: 90rpx;
 	margin: 0 10rpx;
 	padding: 0 20rpx;
 }
+.nav1 .cu-item1 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav1 .cu-item2 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav1 .cu-item.cur {
+	border-bottom: 4rpx solid;
+}
+.nav1 .cu-item1.cur {
+	border-bottom: 4rpx solid;
+}
+.nav1 .cu-item2.cur {
+	border-bottom: 4rpx solid;
+}
+.nav2 {
+	white-space: nowrap;
+}
 
-.nav .cu-item.cur {
+::-webkit-scrollbar {
+	display: none;
+}
+
+.nav2 .cu-item {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav2 .cu-item1 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav2 .cu-item2 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav2 .cu-item.cur {
+	border-bottom: 4rpx solid;
+}
+.nav2 .cu-item1.cur {
+	border-bottom: 4rpx solid;
+}
+.nav2 .cu-item2.cur {
+	border-bottom: 4rpx solid;
+}
+.nav1 {
+	white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.nav1 .cu-item {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav1 .cu-item1 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav1 .cu-item2 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav1 .cu-item.cur {
+	border-bottom: 4rpx solid;
+}
+.nav1 .cu-item1.cur {
+	border-bottom: 4rpx solid;
+}
+.nav1 .cu-item2.cur {
+	border-bottom: 4rpx solid;
+}
+.nav2 {
+	white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.nav2 .cu-item {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav2 .cu-item1 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav2 .cu-item2 {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+.nav2 .cu-item.cur {
+	border-bottom: 4rpx solid;
+}
+.nav2 .cu-item1.cur {
+	border-bottom: 4rpx solid;
+}
+.nav2 .cu-item2.cur {
 	border-bottom: 4rpx solid;
 }
 
@@ -2357,7 +2490,102 @@ button.icon.lg {
 /* ==================
          表单
  ==================== */
+ .cu-form-group1 {
+	background-color: var(--white);
+	padding: 1rpx 30rpx;
+	display: flex;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-between;
+}
 
+ .cu-form-group1 {
+	background-color: var(--white);
+	padding: 1rpx 30rpx;
+	display: flex;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-between;
+}
+
+.cu-form-group1+.cu-form-group {
+	border-top: 1rpx solid #eee;
+}
+
+.cu-form-group1 .title {
+	text-align: justify;
+	padding-right: 30rpx;
+	font-size: 30rpx;
+	position: relative;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+
+.cu-form-group1 input {
+	flex: 1;
+	font-size: 30rpx;
+	color: #555;
+	padding-right: 20rpx;
+}
+
+.cu-form-group1>text[class*="cuIcon-"] {
+	font-size: 36rpx;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cu-form-group1 textarea {
+	margin: 32rpx 0 30rpx;
+	height: 4.6em;
+	width: 100%;
+	line-height: 1.2em;
+	flex: 1;
+	font-size: 28rpx;
+	padding: 0;
+}
+
+.cu-form-group1.align-start .title {
+	height: 1em;
+	margin-top: 32rpx;
+	line-height: 1em;
+}
+
+.cu-form-group1 picker {
+	flex:1;
+	overflow:hidden;
+  position:relative;
+}
+
+.cu-form-group1 picker .picker {
+	line-height: 100rpx;
+  font-size: 30rpx;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+  text-align: left;
+}
+
+.cu-form-group1 picker::after {
+	font-family: "cuIcon";
+	display:block;
+	content: "\e79b";
+	position: absolute;
+	font-size: 40rpx;
+	color: var(--grey);
+	line-height: 100rpx;
+	width: 60rpx;
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	right: -10rpx;
+	margin: auto;
+}
+
+.cu-form-group1 textarea[disabled],
+.cu-form-group1 textarea[disabled] .placeholder {
+	color: transparent;
+}
 .cu-form-group {
 	background-color: var(--white);
 	padding: 1rpx 30rpx;

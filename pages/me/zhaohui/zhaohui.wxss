@@ -1,0 +1,31 @@
+/* pages/Memore/zhaohui/zhaohui.wxss */
+page{
+  background-color: white;
+}
+.section{
+  display: flex;
+  justify-content: center;
+  margin-top: 75rpx;
+  margin-left: 50rpx;
+  font-size: 38rpx;
+  color: #333366;
+}
+
+.source{
+  margin-top: 500rpx;
+  margin-left: 50rpx;
+  display: flexbox;
+}
+.title{
+  font-size: 38rpx;
+  margin-top: 30rpx;
+  color: #333366;
+  justify-content: center;
+}
+.content{
+  font-size: 35rpx;
+  margin-top: 40rpx;
+  color: #333366;
+  flex-wrap: wrap;
+  justify-content: center;
+}

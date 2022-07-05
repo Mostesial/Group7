@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "search":"../../components/search/search",
+    "Tab":"../../components/Tab/Tab"
+  },
+  "navigationStyle": "custom"
+}

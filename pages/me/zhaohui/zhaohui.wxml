@@ -1,0 +1,21 @@
+<!--pages/Memore/zhaohui/zhaohui.wxml-->
+<view class="section" style="width: 650rpx; height: 75rpx; display: block; box-sizing: border-box">
+<text>经过我们系统严密的计算，结合当下起名最流行的趋势，为您的孩子起名为：</text>
+<image src="https://s3.bmp.ovh/imgs/2022/07/04/65acab3589a7479b.png"  style="width: 420rpx; height: 240rpx; display: inline-block; box-sizing: border-box; left: 113rpx; top: 110rpx; position: relative"></image>
+</view>
+
+<view class="source">
+  <view class="title">引自：</view>
+  <view class="content">
+    <view>晋 陆机 《日出东南隅行》</view>
+    <view>“扶桑升朝晖，照此高叠端。”</view>
+  </view>
+  <view class="content">
+    <view>宋 王安石 《永昭陵》诗</view>
+    <view>“神阙澹朝晖，苍苍露未晞。”</view>
+  </view>
+  <view class="content">
+    <view>碧野 《报晓峰》</view>
+    <view>“地球运转十多个小时以后，又是一片朝晖！”</view>
+  </view>
+</view>

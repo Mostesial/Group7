@@ -1,0 +1,6 @@
+<!--pages/Memore/collect/collect.wxml-->
+<view>
+  <Tab tabs="{{tabs}}" binditemChange="ItemChange">
+  <view class="wait">页面建设中，敬请期待……</view>
+  </Tab>
+</view>

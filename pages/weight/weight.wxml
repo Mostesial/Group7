@@ -1,0 +1,23 @@
+<!--pages/weight/weight.wxml-->
+<view class="text">体重</view> 
+<form>
+	<view class="cu-form-group">
+		<view class="text2">日期</view>
+    <text decode="{{true}}" space="{{true}} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+		<picker mode="date" value="{{date}}" start="2010-09-01" end="2999-09-01" bindchange="DateChange" class=" ">
+			<view class="picker text-gray ">{{date}}	</view>
+		</picker>
+	</view>
+  
+  <view class="cu-form-group">
+		<view class="text2">体重</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+		<input placeholder="请输入体重" value="{{HEIGHT}}" bindinput="inputHeight"></input>
+		<text class="text2">kg</text>
+	</view>
+  
+  <view class="cu-form-group"></view>
+  <view class="padding flex flex-direction">
+    <button class="cu-btn round lg bg-purple lg text-pink" bindtap="queding" >确定</button>
+  </view>	
+</form>

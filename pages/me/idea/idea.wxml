@@ -1,0 +1,9 @@
+<!--pages/Memore/idea/idea.wxml-->
+
+<view class="idea" style="width: 710rpx; height: 620rpx; display: block; box-sizing: border-box">
+  <text class="content">    “幼鸟指南”是一款仍处于开发阶段的程序，我们期待您能够在体验过程序功能后反馈自己使用体验，并对小程序提出一些意见与建议，我们将不断修改，以推出更完善的程序，给予用户更好的使用体验。</text>
+  <textarea class="ideainput" placeholder="请描述一下您的使用体验" style="width: 710rpx; height: 394rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx"></textarea>
+</view>
+<view>
+  <button bindtap="ClickButton" class="submit">提交</button>
+</view>

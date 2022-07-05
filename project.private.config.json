@@ -34,6 +34,69 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "心情",
+          "pathName": "pages/moodrecord2/moodrecord2",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/me/me",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "体重",
+          "pathName": "pages/weight/weight",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "睡眠",
+          "pathName": "pages/sleep/sleep",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "月经",
+          "pathName": "pages/yuejing/yuejing",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "体重",
+          "pathName": "pages/weight/weight",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "记录",
+          "pathName": "pages/record1/record1",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "科普",
+          "pathName": "pages/knowledge/knowledge",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "总记录页面",
+          "pathName": "pages/babez/babez",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

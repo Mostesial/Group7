@@ -1,0 +1,50 @@
+<view class="text" style="width: 598rpx; height: 97rpx; display: block; box-sizing: border-box">Record</view> 
+<view class="chose">
+     <scroll-view scroll-x class=" nav1 text-center">
+      <view class="cu-item {{0==TabCur?'  cur':''}}" bindtap="tabSelect" data-id="0" >
+        <text class="text3">宝宝记录</text> 
+      </view>
+      <view class="cu-item {{1==TabCur?'  cur':''}}" bindtap="tabSelect" data-id="1" >
+        <text class="text3">妈妈记录</text> 
+      </view>
+    </scroll-view>
+  </view> 
+<view class="shape bg-purple" style="width: 673rpx; height: 741rpx; display: block; box-sizing: border-box">
+  <view class="text1" style="width: 673rpx; height: 97rpx; display: block; box-sizing: border-box">生长记录
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    <text class="cuIcon-add" bindtap="gotoszjl"></text>
+  </view>
+
+  <image style="position: relative; width: 648rpx; height: 568rpx; display: inline-block; box-sizing: border-box; left: 13rpx; top: 26rpx" src="https://s1.ax1x.com/2022/07/04/jJv4AA.png" />
+</view>
+ <view class="shape2 bg-pink" style="width: 673rpx; height: 300rpx; display: block; box-sizing: border-box">
+  <view class="text2" style="width: 673rpx; height: 97rpx; display: block; box-sizing: border-box">喂奶
+     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+     <text class="cuIcon-add" bindtap="gotown"></text>
+  </view>
+  <view class="all">
+    <view class="left" style="width: 394rpx; height: 136rpx; display: block; box-sizing: border-box">
+      <view class="text4" style="width: 345rpx; height: 61rpx; display: block; box-sizing: border-box">今日喂奶次数</view>
+      <view class="text4" style="width: 345rpx; height: 61rpx; display: block; box-sizing: border-box">上次喂奶时间：6：05</view>
+    </view>
+  
+    <image style="position: relative; width: 228rpx; height: 214rpx; display: inline-block; box-sizing: border-box; left: 357rpx; top: -175rpx" src="https://s1.ax1x.com/2022/07/04/jJxhKU.png" />
+  </view>
+
+</view> 
+<view class="shape3 bg-purple" style="width: 673rpx; height: 399rpx; display: block; box-sizing: border-box">
+  <view class="text1" style="width: 673rpx; height: 97rpx; display: block; box-sizing: border-box">睡眠
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    <text class="cuIcon-add" bindtap="gotosm"></text>
+  </view>
+
+  <image style="position: relative; width: 580rpx; height: 206rpx; display: inline-block; box-sizing: border-box; left: 47rpx; top: 29rpx" src="https://s1.ax1x.com/2022/07/04/jJvzhq.png" />
+</view> 
+<view class="shape4 bg-pink" style="width: 673rpx; height: 300rpx; display: block; box-sizing: border-box">
+  <view class="text2" style="width: 673rpx; height: 97rpx; display: block; box-sizing: border-box">便便  
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    <text class="cuIcon-add" bindtap="gotobb"></text>
+  </view>
+  <view class="text4" style="width: 518rpx; height: 61rpx; display: block; box-sizing: border-box">7月3日 11：06  中黄色 较干</view>
+  <view class="text4" style="width: 518rpx; height: 61rpx; display: block; box-sizing: border-box">7月4日 17：42  中黄色 较干</view>
+</view> 

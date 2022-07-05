@@ -1,0 +1,35 @@
+/* components/MilkTabs/MilkTabs.wxss */
+.tabs{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mode{
+  font-size: 40rpx;
+  align-items: center;
+  font-weight: bolder;
+  padding: 20rpx;
+  color: #333366;
+}
+.tabs_title{
+  display: flex;
+  padding: 10rpx;
+  width: 500rpx;
+  height: 50rpx;
+}
+.title_item{
+  flex: 1;
+  display: flex;
+  padding: 10rpx;
+  justify-items: center;
+  align-items: center;
+  font-size: 35rpx;
+  columns: #777777;
+}
+.active{
+  font-weight: bold;
+  color:#333366;
+  border-bottom:5rpx solid #333366;
+}

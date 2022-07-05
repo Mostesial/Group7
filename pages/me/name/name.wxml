@@ -1,0 +1,41 @@
+<!--pages/Memore/name/name.wxml-->
+<view class="section1">
+  <view class="section__title" style="width: 260rpx; height: 60rpx; display: block; box-sizing: border-box">宝宝出生日期     </view>
+  <picker mode="date" value="{{date}}" start="2020-09-01" end="2030-09-01" bindchange="bindDateChange">
+    <view class="picker" style="width: 350rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title" style="width: 260rpx; height: 60rpx; display: block; box-sizing: border-box">具体出生时间     </view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker" style="width: 350rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{time}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title" style="width: 260rpx; height: 60rpx; display: block; box-sizing: border-box">宝宝姓氏</view>
+  <input style="width: 350rpx; height: 60rpx; display: flex; box-sizing: border-box" type="number" class="quantity" auto-focus placeholder="请输入宝宝姓氏">
+  </input>
+</view>
+
+<view class="section">
+  <view class="section__title" style="width: 260rpx; height: 60rpx; display: block; box-sizing: border-box">宝宝性别</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{babysex}}">
+    <view class="picker" style="width: 350rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{babysex[index]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title" style="width: 260rpx; height: 60rpx; display: block; box-sizing: border-box">希望出现的字</view>
+  <input style="width: 350rpx; height: 60rpx; display: flex; box-sizing: border-box"  class="remarks" auto-focus placeholder="如果没有，可以不填"/>
+</view>
+
+<button class="yes" style="width: 450rpx; height: 90rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx" bindtap="ClickButton">一键取名</button>
+

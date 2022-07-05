@@ -1,0 +1,104 @@
+<!--pages/me/me.wxml-->
+<view class="text">Me</view>
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="static">
+  <navigator url="/pages/me/idea/idea" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+    <text class="color1">意见反馈</text>
+    <text class="color2">></text>
+  </navigator>
+  <navigator url="/pages/me/collect/collect" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+    <text class="color1">我的收藏</text>
+    <text class="color2">></text>
+  </navigator>
+  <navigator url="/pages/me/name/name" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+    <text class="color1">智慧起名</text>
+    <text class="color2">></text>
+  </navigator>
+  <view class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+    <text class="color1">优质早教</text>
+    <text class="color2">></text>
+  </view>
+  <navigator url="/pages/me/setting/setting" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+    <text class="color1">设置</text>
+    <text class="color2">></text>
+  </navigator>
+</view>
+
+<!-- 操作条背后,可以提供背后的阴影，特别是那个中间的球-->
+<view class="cu-bar tabbar bg-white shadow-warp foot" style="border-radius: 50rpx">
+  <view class="action" style="color:rgb(51, 51, 102)">
+    <view class="cuIcon-edit"></view> record
+  </view>
+
+  <view class="action" style="color: rgb(51, 51, 102); background-color: #fcdede; border-radius: 100px; width: 92rpx; height: 100rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <view class="cuIcon-noticefill" style="margin-top: 5px;"></view> remind
+  </view>
+
+  <view class="imagelogo radius shadow-warp " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
+  <image src="/images/logo_yang.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
+  </view>
+
+  <view class="action" style="color:rgb(51, 51, 102)">
+    <view class="cuIcon-read">
+      <view class="cu-tag badge"></view>
+    </view>
+    knowledge
+  </view>
+
+  <view class="action" style="color:rgb(51, 51, 102)">
+    <view class="cuIcon-myfill">
+      <view class="cu-tag badge"></view>
+    </view>
+    me
+  </view>
+</view>
+
+<!-- 操作条表面 -->
+<record wx:if="{{PageCur=='record'}}"></record>
+<remind wx:if="{{PageCur=='remind'}}"></remind>
+<knowledge wx:if="{{PageCur=='knowledge'}}"></knowledge>
+<me wx:if="{{PageCur=='me'}}"></me>
+
+<view class="cu-bar tabbar bg-white shadow foot" style="border-radius: 50rpx">
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="record">
+    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>record
+  </view>
+
+  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="remind" >
+    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>remind
+  </view>
+
+  <view class="imagelogo radius shadow " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
+    <image src="/images/index/Logo.png" style="width: 140rpx; height: 140rpx; border-radius: 117rpx; position: relative; left: 17rpx; top: 17rpx"></image>
+  </view>
+
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="knowledge">
+    <view class='cuIcon-read' style="margin-top: 15rpx;">
+      <view class="cu-tag badge"></view>
+    </view>knowledge
+  </view>
+
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="me" >
+    <view class='cuIcon-myfill' style="margin-top: 15rpx;">
+      <view class="cu-tag badge"></view>
+    </view>me
+  </view>
+</view>

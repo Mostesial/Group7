@@ -1,0 +1,59 @@
+/**index.wxss**/
+page{
+  background-color: #ffffff;
+}
+.riqi {
+  margin-top: 37rpx;
+	background-color: var(--white);
+	padding: 1rpx 30rpx;
+  display: flex;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-between;
+}
+
+.riqi-name{
+  color: #333366;
+  font-size: 30rpx;
+  font-weight: bolder;
+  margin-left: 57rpx;
+}
+
+.riqi-time{
+  width: 500rpx;
+  height: 50rpx;
+  margin-right: 28rpx;
+  border: #B0B0B0;
+  border-style: solid;
+  border-width: 1rpx;
+  display: flex;
+  align-items: center;
+}
+
+.beizhu-name{
+  color: #333366;
+  font-size: 30rpx;
+  font-weight: bolder;
+  margin-left: 57rpx;
+}
+
+.shuru{
+  margin-top: 40rpx;
+  border:#B0B0B0;
+  border-width: 1rpx;
+  border-style: solid;
+  display: flex;
+}
+
+.ebutton{
+  margin-left: 270rpx;
+  margin-top: 40rpx;
+}
+
+.pic{
+  height: 120rpx;
+  width: 120rpx;
+}
+
+.b-2{
+}

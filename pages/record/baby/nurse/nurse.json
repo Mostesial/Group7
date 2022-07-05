@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "MilkTabs":"../../components/MilkTabs/MilkTabs"
+  },
+  "navigationBarTitleText": "喂奶"
+}
