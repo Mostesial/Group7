@@ -97,6 +97,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "喂奶",
+          "pathName": "pages/record/baby/nurse/nurse",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
