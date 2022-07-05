@@ -1,26 +1,29 @@
 {
   "pages": [
-    "pages/logs/logs",
-    "pages/login/login",
-    "pages/reg/reg",
-    "pages/agr/agr",
-    "pages/index/index",
-    "pages/weight/weight",
-    "pages/yuejing/yuejing",
-    "pages/remind/remind",
-    "pages/record1/record1",
-    "pages/record2/record2",
-    "pages/babez/babez",
+    "pages/start/info/info",
+    "pages/start/login/login",
+    "pages/start/reg/reg",
+    "pages/start/agr/agr",
+    "pages/start/index/index",
+
     "pages/knowledge/knowledge",
+
     "pages/me/me",
     "pages/me/collect/collect",
     "pages/me/idea/idea",
     "pages/me/name/name",
     "pages/me/setting/setting",
     "pages/me/zhaohui/zhaohui",
+    
+    "pages/babez/babez",
+    "pages/record/baby/excrete/excrete",
+    "pages/record/baby/grow/grow",
     "pages/record/baby/nurse/nurse",
-    "pages/sleep/sleep",
-    "pages/moodrecord2/moodrecord2"
+    "pages/record/baby/sleep/sleep",
+    "pages/record/mom/mood/mood",
+    "pages/record/mom/sleep/sleep",
+    "pages/record/mom/weight/weight",
+    "pages/record/mom/yuejing/yuejing"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -5,17 +5,19 @@ Page({
   },
 
   gotoszjl() { wx.redirectTo({
-    url:"/pages/record1/record1",
+    url:"/pages/record/baby/grow/grow",
   })},
   gotown() { wx.redirectTo({
-    url:"/pages/record1/record1",
+    url:"/pages/record/baby/nurse/nurse",
   })},
-  gotoszjl() { wx.redirectTo({
-    url:"/pages/record1/record1",
-  })},  
   gotobb() { wx.redirectTo({
-    url:"/pages/record2/record",
+    url:"/pages/record/baby/excrete/excrete",
   })},
+  gotosm() {
+    wx.redirectTo({
+      url: '/pages/record/baby/sleep/sleep',
+    })
+  },
   tabSelect(e) {
     const{
       TabCur,

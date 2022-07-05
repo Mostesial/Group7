@@ -9,28 +9,7 @@
       "list": [
         {
           "name": "首页",
-          "pathName": "pages/index/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "登录",
-          "pathName": "pages/login/login",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "注册",
-          "pathName": "pages/reg/reg",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "身份信息",
-          "pathName": "pages/logs/logs",
+          "pathName": "pages/start/index/index",
           "query": "",
           "launchMode": "default",
           "scene": null
@@ -57,29 +36,8 @@
           "scene": null
         },
         {
-          "name": "睡眠",
-          "pathName": "pages/sleep/sleep",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "月经",
-          "pathName": "pages/yuejing/yuejing",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "体重",
-          "pathName": "pages/weight/weight",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "记录",
-          "pathName": "pages/record1/record1",
+          "pathName": "pages/record/mom/yuejing/yuejing",
           "query": "",
           "launchMode": "default",
           "scene": null
@@ -94,13 +52,6 @@
         {
           "name": "总记录页面",
           "pathName": "pages/babez/babez",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "喂奶",
-          "pathName": "pages/record/baby/nurse/nurse",
           "query": "",
           "launchMode": "default",
           "scene": null

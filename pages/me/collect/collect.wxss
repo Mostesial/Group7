@@ -1,12 +1,12 @@
 /* pages/Memore/collect/collect.wxss */
 page{
-  background-color: #f5f5f5;
+  background-color:white;
 }
 
 .wait{
-  margin-top: 30rpx;
+  margin-top: 250rpx;
   color: #333366;
-  font-size: large;
+  font-size: 40rpx;
   display: flex;
   justify-content: center;
 }

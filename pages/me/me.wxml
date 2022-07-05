@@ -32,10 +32,10 @@
     <text class="color1">智慧起名</text>
     <text class="color2">></text>
   </navigator>
-  <view class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <navigator url="/pages/me/teaching/teaching" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
     <text class="color1">优质早教</text>
     <text class="color2">></text>
-  </view>
+  </navigator>
   <navigator url="/pages/me/setting/setting" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
     <text class="color1">设置</text>
     <text class="color2">></text>
@@ -53,7 +53,7 @@
   </view>
 
   <view class="imagelogo radius shadow-warp " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-  <image src="/images/logo_yang.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
+  <image src="/images/index/Logo.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
   </view>
 
   <view class="action" style="color:rgb(51, 51, 102)">

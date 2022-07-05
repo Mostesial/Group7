@@ -1,0 +1,44 @@
+/* pages/me/teaching/teaching.wxss */
+page{
+  background-color: white;
+}
+
+.xuezaizheda{
+  margin-top: 200rpx;
+}
+.website{
+  margin-top: 25rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+  color: #333366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dddd{
+  margin-top: 100rpx;
+  font-size: 75rpx;
+  font-weight: bolder;
+  color: #333366;
+  display: flex;
+  justify-content: center;
+}
+
+.jiu{
+  margin-top: 50rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+  color: #333366;
+  display: flex;
+  justify-content: center;
+}
+
+.ni{
+  margin-top: 10rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+  color: #333366;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,50 @@
+<!--pages/information/information.wxml-->
+<view animation="{{animationData1}}">
+<image class='redC' src='/images/index/redC.png'></image>
+</view>
+<view animation="{{animationData2}}">
+<image class='pinkC1' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData3}}">
+<image class='pinkC2' src='/images/index/pinkC.png'></image>
+</view>
+<view animation="{{animationData4}}">
+<image class='purpleC' src='/images/index/purpleC.png'></image>
+</view>
+<view class="section1">
+  <view class="section__title">我的身份：</view>
+  <picker bindchange="bindPickerChange1" value="{{index}}" range="{{sex}}">
+    <view class="picker">
+      {{sex[index1]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">宝宝性别：</view>
+  <picker bindchange="bindPickerChange2" value="{{index}}" range="{{babysex}}">
+    <view class="picker">
+      {{babysex[index2]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">宝宝生日：</view>
+  <picker mode="date" value="{{date}}" start="2018-09-01" end="2023-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">出生孕周：</view>
+  <picker bindchange="bindPickerChange3" value="{{index}}" range="{{babytime}}">
+    <view class="picker">
+      {{babytime[index3]}}
+    </view>
+  </picker>
+</view>
+
+<button class="enter" bindtap="enter">Enter</button>

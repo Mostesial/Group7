@@ -1,0 +1,94 @@
+/* pages/record/mom/yuejing/yuejing.wxss */
+.text{
+  margin-left:37%;
+  margin-top: 10%;
+  font-size:47rpx;
+  font-style:unset;
+  font-weight:bolder;
+  color:rgb(51, 51, 102);
+  height: 50px;
+}
+.text2{
+  font-size:38rpx;
+  font-style: normal;
+  font-weight:bolder;
+  color:rgb(51, 51, 102);
+}
+.text3{
+  font-size:12px;
+  font-style:inherit;
+  font-weight:bolder;
+  color:rgb(51, 51, 102);
+}
+
+.cu-form-group{
+  margin-top: 2%;
+  min-height:45px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.cu-form-group1{
+  margin-top: 2%;
+  min-height:45px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.cu-form-group picker::after {
+	content: "\e74a";
+}
+.cu-form-group1 picker::after {
+	content: "\e65f";
+}
+
+page{
+  background-color:rgb(255, 255, 255);
+  margin-top:4%;
+  min-width: width 80px; 
+}
+
+/* 下拉框组件属性============================== */
+.list-msg {
+    padding: 0 20rpx;
+    background-color: #fff;
+    position: relative;
+}
+ 
+.list-msg1 {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.list-msg .list-msg2 {
+    height: 90rpx;
+    width: 500rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 6rpx solid #ccc;
+    border-radius: 50rpx;
+    padding: 0 10rpx;
+    position:relative;
+}
+ 
+.select_box {
+    background-color: #ffffff;
+    padding: 0 60rpx;
+    width: 510rpx;
+    position: absolute;
+    top: 120rpx;
+    z-index: 1;
+    animation: myfirst 0.5s;
+    border-radius: 50rpx;
+    border: 3rpx solid #ccc;
+    box-shadow: 2px 2px 2px 2px rgba(204, 204, 204, 0.582);
+}
+
+.select_one {
+    height: 60rpx;
+    line-height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -5,7 +5,7 @@ page{
 .section{
   display: flex;
   justify-content: center;
-  margin-top: 75rpx;
+  margin-top: 80rpx;
   margin-left: 50rpx;
   font-size: 38rpx;
   color: #333366;

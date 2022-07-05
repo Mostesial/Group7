@@ -1,0 +1,20 @@
+<!--pages/me/teaching/teaching.wxml-->
+<view class="xuezaizheda">
+  <image src="https://s3.bmp.ovh/imgs/2022/07/05/805f2667ed0e44d3.png" style="width: 320rpx; height: 150rpx; display: inline-block; box-sizing: border-box; left: 220rpx; top: 0rpx; position: relative"></image>  
+</view>
+
+<view class="website" style="width: 750rpx; height: 86rpx; display: flex; box-sizing: border-box">
+  <text class="website">https://course.zju.edu.cn/zh-cn/</text>
+</view>
+
+<view>
+  <text class="dddd">!DDDD!</text>
+</view>
+
+<view class="chuanxiao">
+  <text class="jiu">985名师授课！</text>
+</view>
+
+<view>
+  <text class="ni">你值得拥有！</text>
+</view>
