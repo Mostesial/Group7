@@ -1,1 +1,70 @@
 /* pages/remind/remind.wxss */
+page{
+    background-color: white;
+}
+
+/* 以下是标题设置 */
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 以上为居中显示 */
+    margin-top: 20%;
+    font-size:59rpx;
+    font-style:unset;
+    font-weight:bolder;
+    color:rgb(51, 51, 102);
+    height: 117rpx;
+  }
+.text1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 以上为居中显示 */
+    font-size:35rpx;
+    font-style:unset;
+    font-weight:bolder;
+    color:rgb(51, 51, 102);
+}
+
+.text2{
+  /* font-size:px; */
+  font-style:unset;
+  margin-right: 0%;
+}
+
+  .plus{
+      color: white;
+      font-size:59rpx;
+      font-weight:none;
+  }
+  .padding-sm,
+  .padding{
+    border-radius: 47rpx;
+  }
+  .cu-form-group{
+    border-radius: 23rpx;
+  }
+
+  /* 以下是待办事项的设置 */
+  /* 背景设置为粉色 */
+  .cu-form-group {
+    background-color: #FCF0F0;
+  }
+  /* 下方方块颜色 */
+  .flex-sub{
+      background-color: #fbfaff;
+      border-radius: none;
+  }
+
+ /*checkbox选中后样式  */
+  checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+    border: 1px solid rgb(51, 51, 102);
+    border-radius: 30%;
+  } 
+
+  /* "孕育每一天"的框框 */
+  .content{
+    font-size: 21rpx;
+    width: 281rpx;
+  }

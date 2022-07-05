@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "component": true,
+  "usingComponents": {
+    "remind": "/pages/remind/remind"
+  },
+  "navigationStyle": "custom"
 }
