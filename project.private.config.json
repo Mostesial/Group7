@@ -15,29 +15,8 @@
           "scene": null
         },
         {
-          "name": "心情",
-          "pathName": "pages/moodrecord2/moodrecord2",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "我的",
           "pathName": "pages/me/me",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "体重",
-          "pathName": "pages/weight/weight",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "月经",
-          "pathName": "pages/record/mom/yuejing/yuejing",
           "query": "",
           "launchMode": "default",
           "scene": null
@@ -52,6 +31,13 @@
         {
           "name": "总记录页面",
           "pathName": "pages/babez/babez",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "提醒",
+          "pathName": "pages/remind/remind",
           "query": "",
           "launchMode": "default",
           "scene": null

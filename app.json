@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/start/index/index",
     "pages/start/info/info",
     "pages/start/login/login",
     "pages/start/reg/reg",
     "pages/start/agr/agr",
-    "pages/start/index/index",
 
     "pages/knowledge/knowledge",
+
+    "pages/remind/remind",
 
     "pages/me/me",
     "pages/me/collect/collect",
