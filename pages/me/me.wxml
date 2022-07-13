@@ -1,45 +1,31 @@
 <!--pages/me/me.wxml-->
-<view class="text">Me</view>
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
+<view>
+  <view style="font-size: 25px; font-weight: bolder; display: flex;justify-content: center;margin-top: 150rpx; margin-bottom: 50rpx;color: #333366;">我的</view>
+<image class="avatarUrl" src="{{avatarUrl}}" style="width: 200rpx; height: 200rpx; display: block; box-sizing: border-box; left:37%; top: 80rpx; position: relative"></image> 
 </view>
-<view class="static">
-  <navigator url="/pages/me/idea/idea" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
-    <text class="color1">意见反馈</text>
-    <text class="color2">></text>
-  </navigator>
-  <navigator url="/pages/me/collect/collect" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
-    <text class="color1">我的收藏</text>
-    <text class="color2">></text>
-  </navigator>
-  <navigator url="/pages/me/name/name" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
-    <text class="color1">智慧起名</text>
-    <text class="color2">></text>
-  </navigator>
-  <navigator url="/pages/me/teaching/teaching" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
-    <text class="color1">优质早教</text>
-    <text class="color2">></text>
-  </navigator>
-  <navigator url="/pages/me/setting/setting" class="content contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
-    <text class="color1">设置</text>
-    <text class="color2">></text>
-  </navigator>
+<view class="text4" style="position: relative;top: 80rpx;">
+<text>{{nickName}}</text></view>
+<view class="container" style="position: relative; left: -4rpx; top: -235rpx; width: 750rpx; height: 326rpx; display: flex; box-sizing: border-box">
+</view> 
+  <view class="content contact" style="position: relative; width: 750rpx; height: 78rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -235rpx" bindtap="gotoidea">
+    <text class="me-color1">意见反馈</text>
+    <text class="me-color2">></text>
+  </view>
+  <view class="content contact" style="position: relative; width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -235rpx" bindtap="gotocollect">
+    <text class="me-color1">我的收藏</text>
+    <text class="me-color2">></text>
+  </view>
+  <view class="content contact" style="position: relative; width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -235rpx" bindtap="gotoname">
+    <text class="me-color1">智慧起名</text>
+    <text class="me-color2">></text>
+  </view>
+  <view class="content contact" style="position: relative; width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -235rpx" bindtap="gototeaching">
+    <text class="me-color1">优质早教</text>
+    <text class="me-color2">></text>
+  </view>
+  <view class="content contact" style="position: relative; width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -235rpx" bindtap="gotosetting">
+    <text class="me-color1">设置</text>
+    <text class="me-color2">></text>
 </view>
 
 <!-- 操作条背后,可以提供背后的阴影，特别是那个中间的球-->
@@ -53,7 +39,7 @@
   </view>
 
   <view class="imagelogo radius shadow-warp " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-  <image src="/images/index/Logo.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
+    <image src="https://s1.ax1x.com/2022/07/06/jaJ6M9.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
   </view>
 
   <view class="action" style="color:rgb(51, 51, 102)">
@@ -72,33 +58,29 @@
 </view>
 
 <!-- 操作条表面 -->
-<record wx:if="{{PageCur=='record'}}"></record>
-<remind wx:if="{{PageCur=='remind'}}"></remind>
-<knowledge wx:if="{{PageCur=='knowledge'}}"></knowledge>
-<me wx:if="{{PageCur=='me'}}"></me>
-
 <view class="cu-bar tabbar bg-white shadow foot" style="border-radius: 50rpx">
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="record">
-    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>record
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange1" data-cur="record">
+    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>记录
   </view>
 
-  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="remind" >
-    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>remind
+  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange2" data-cur="remind" >
+    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>提醒
   </view>
 
   <view class="imagelogo radius shadow " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-    <image src="/images/index/Logo.png" style="width: 140rpx; height: 140rpx; border-radius: 117rpx; position: relative; left: 17rpx; top: 17rpx"></image>
+    <image src="https://s1.ax1x.com/2022/07/06/jaJ6M9.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: absolute; left: 306rpx; top: -80rpx"></image>
+    <view style="margin-top: 150rpx; width: 168rpx; height: 40rpx; display: flex; justify-content: center; color: #333366; font-size: 25rpx; align-items: center;">论坛</view>
   </view>
 
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="knowledge">
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange3" data-cur="knowledge">
     <view class='cuIcon-read' style="margin-top: 15rpx;">
       <view class="cu-tag badge"></view>
-    </view>knowledge
+    </view>科普
   </view>
 
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="me" >
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange4" data-cur="me" >
     <view class='cuIcon-myfill' style="margin-top: 15rpx;">
       <view class="cu-tag badge"></view>
-    </view>me
+    </view>我的
   </view>
 </view>

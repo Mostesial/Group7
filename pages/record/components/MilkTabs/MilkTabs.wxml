@@ -1,6 +1,6 @@
 <!--components/MilkTabs/MilkTabs.wxml-->
 <view class="tabs">
-  <text class="mode" style="width: 204rpx; height: 68rpx; display: block; box-sizing: border-box">喂养方式</text>
+  <text class="mode" style="width: 204rpx; height: 68rpx; display: flex; box-sizing: border-box">喂养方式</text>
   <view class="tabs_title" >
     <view wx:for="{{tabs}}" wx:key="id"
     class="title_item {{item.isActive?'active':''}}"

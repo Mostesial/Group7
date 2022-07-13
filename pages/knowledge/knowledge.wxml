@@ -1,5 +1,8 @@
 <!--pages/knowledge/knowledge.wxml-->
-<view class="text">Knowledge</view> 
+<view>
+  <view style="font-size: 25px; font-weight: bolder; display: flex;justify-content: center;margin-top: 150rpx; margin-bottom: 50rpx;color: #333366;">科普</view>
+</view>
+
 
 <view>
   <search></search>
@@ -11,7 +14,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/37e943ea1dc95e53.png"></image>
       </view>
-      <view class="content">带宝宝接种疫苗时，很可能会碰到一些特殊情况，如宝宝生病、疫苗断货等，一些爸爸妈妈会想着能不能推迟接种……</view>
+      <view class="knowledge-content">带宝宝接种疫苗时，很可能会碰到一些特殊情况，如宝宝生病、疫苗断货等，一些爸爸妈妈会想着能不能推迟……</view>
       <view class="other">
         <view class="comment">177赞同·38评论</view>
         <view class="more">…</view>
@@ -22,7 +25,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/37e943ea1dc95e53.png"></image>
       </view>
-      <view class="content">（来源：中国疾病预防控制中心免疫规划中心）该两批次百白破疫苗效价指标不合格，很大可能会影响免疫保护效果……</view>
+      <view class="knowledge-content">（来源：中国疾病预防控制中心免疫规划中心）该两批次百白破疫苗效价指标不合格，很大可能会影响免疫……</view>
       <view class="other">
         <view class="comment">547赞同·88评论</view>
         <view class="more">…</view>
@@ -33,7 +36,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/175a17254760c1bc.png"></image>
       </view>
-      <view class="content">近日，中国疾病预防控制中心免疫规划中心负责人做出明确解释：国家纳入计划免疫、有效一免疫规章的疫苗只有5种……</view>
+      <view class="knowledge-content">近日，中国疾病预防控制中心免疫规划中心负责人做出明确解释：国家纳入计划免疫、有效一免疫规章的疫苗……</view>
       <view class="other">
         <view class="comment">111赞同·25评论</view>
         <view class="more">…</view>
@@ -44,7 +47,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/3a348b80a0fe59e0.png"></image>
       </view>
-      <view class="content">驱蚊的化学方法：美国疾病预防与控制中心推荐的四种驱蚊制剂分别是:DEET、伊墨宁、埃卡瑞丁和柠檬桉叶油。而驱……</view>
+      <view class="knowledge-content">驱蚊的化学方法：美国疾病预防与控制中心推荐的四种驱蚊制剂分别是:DEET、伊墨宁、埃卡瑞丁和柠檬桉叶……</view>
       <view class="other">
         <view class="comment">189赞同·27评论</view>
         <view class="more">…</view>
@@ -55,7 +58,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/961e315c7ffd1265.png"></image>
       </view>
-      <view class="content">感冒是最常见的一种病症。随着气温急剧转低，感冒高发的季节即将来临，各种预防、治疗感冒的良方又开始受到大家……</view>
+      <view class="knowledge-content">感冒是最常见的一种病症。随着气温急剧转低，感冒高发的季节即将来临，各种预防、治疗感冒的良方又开始……</view>
       <view class="other">
         <view class="comment">79赞同·15评论</view>
         <view class="more">…</view>
@@ -66,7 +69,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/175a17254760c1bc.png"></image>
       </view>
-      <view class="content">小宝宝每日需要引用多少水，要由宝宝的年龄决定。宝宝还没满6个月，由妈妈提供母乳，母乳充足，宝宝不需要额外……</view>
+      <view class="knowledge-content">小宝宝每日需要引用多少水，要由宝宝的年龄决定。宝宝还没满6个月，由妈妈提供母乳，母乳充足，宝宝不需……</view>
       <view class="other">
         <view class="comment">147赞同·28评论</view>
         <view class="more">…</view>
@@ -77,13 +80,14 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/3a348b80a0fe59e0.png"></image>
       </view>
-      <view class="content">秋冬季是小儿腹泻的高发季节，所以发生在这个季节的腹泻常被称为“秋季腹泻”。儿童腹泻和成人腹泻是不一样……</view>
+      <view class="knowledge-content">秋冬季是小儿腹泻的高发季节，所以发生在这个季节的腹泻常被称为“秋季腹泻”。儿童腹泻和成人腹泻是不一……</view>
       <view class="other">
         <view class="comment">189赞同·27评论</view>
         <view class="more">…</view>
       </view>
     </view>
 <view class="loading">正在加载……</view>
+    <text>\n\n</text>
   </block>
 
   <!--心理治疗-->
@@ -93,7 +97,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/cab9eaad7343d242.png"></image>
       </view>
-      <view class="content">没生孩子的时候，从来没想过我居然要经历这些……</view>
+      <view class="knowledge-content">没生孩子的时候，从来没想过我居然要经历这些……</view>
       <view class="contentimage">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/71b6dd549fed5b0e.jpg"></image>
       </view>
@@ -107,7 +111,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/37e943ea1dc95e53.png"></image>
       </view>
-      <view class="content">1.白天情绪低落，夜晚情绪高涨，出现昼夜颠倒的现象；2.几乎对所有事物失去兴趣，感觉生活无趣；3.食欲大增或大……</view>
+      <view class="knowledge-content">1.白天情绪低落，夜晚情绪高涨，出现昼夜颠倒的现象；2.几乎对所有事物失去兴趣，感觉生活无趣；3.食欲大……</view>
       <view class="other">
         <view class="comment">179赞同·35评论</view>
         <view class="more">…</view>
@@ -118,7 +122,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/86093784b1e93550.png"></image>
       </view>
-      <view class="content">为了有效预防产后抑郁，需要做到以下几点：放下思想上的包袱；消除不必要的担心；家人多给与产妇关心；加强夫妻……</view>
+      <view class="knowledge-content">为了有效预防产后抑郁，需要做到以下几点：放下思想上的包袱；消除不必要的担心；家人多给与产妇关心……</view>
       <view class="contentimage">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/9567773890554964.jpg"></image>
       </view>
@@ -132,7 +136,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/3a348b80a0fe59e0.png"></image>
       </view>
-      <view class="content">产后抑郁是女性再生完孩子以后，由于生理和心理因素造成的、主要表现为情绪低落、焦虑、悲伤、沮丧、易激怒……</view>
+      <view class="knowledge-content">产后抑郁是女性再生完孩子以后，由于生理和心理因素造成的、主要表现为情绪低落、焦虑、悲伤、易激怒……</view>
       <view class="other">
         <view class="comment">79赞同·15评论</view>
         <view class="more">…</view>
@@ -143,7 +147,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/175a17254760c1bc.png"></image>
       </view>
-      <view class="content">研究发现，产后抑郁并不是妈妈的专利，有10%左右的爸爸也会得产后抑郁。那么产后爸爸们得抑郁到底是怎么回事？……</view>
+      <view class="knowledge-content">研究发现，产后抑郁并不是妈妈们的专利，有10%左右的爸爸也会得产后抑郁。那么产后爸爸们得抑郁到底是……</view>
       <view class="other">
         <view class="comment">67赞同·8评论</view>
         <view class="more">…</view>
@@ -154,13 +158,14 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/961e315c7ffd1265.png"></image>
       </view>
-      <view class="content">5年前我顺利生下女儿薇薇，在孩子快出月子时却患上了产后抑郁症。带孩子很疲惫的我夜里开始经常失眠，一边是……</view>
+      <view class="knowledge-content">5年前，我顺利生下女儿薇薇，在孩子快出月子时却患上了产后抑郁症。带孩子很疲惫的我夜里开始经常失眠……</view>
       <view class="other">
         <view class="comment">122赞同·34评论</view>
         <view class="more">…</view>
       </view>
     </view>
     <view class="loading">正在加载……</view>
+    <text>\n\n</text>
   </block>
 
   <!--好物推荐-->
@@ -169,18 +174,15 @@
   <view class="flex-wrp" >
     <image src="https://s1.ax1x.com/2022/07/02/j103aF.png" style="width:402rpx;height:506rpx;"></image>
     <view class="text-gray text-sm">   
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>   
-      <text class="cuIcon-round margin-lr-xs"></text> The DaisyFlor...
-      <text class="cuIcon-like margin-lr-xs" ></text> 1478 
+      <text bindtap="colorchange8" class="{{round[7].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}" style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 20rpx; top: 0rpx">The DaisyFlora...</text> 
+      <text bindtap="likecolorchange8"class="{{like[7].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative;"  style="position: relative; left: 52rpx; top: 0rpx">{{number[7]}}</text>
     </view>
   </view>
   <view class="flex-wrp" >
     <image src="https://s1.ax1x.com/2022/07/02/j10KK0.png"  style="width:370rpx;height:532rpx;"></image>
-    <view class="text-gray text-sm">   
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>          
-      <text class="cuIcon-round margin-lr-xs"></text>
-      <text decode="{{true}}" space="{{true}}">强生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-like margin-lr-xs"></text> 588
+    <view class="text-gray text-sm" style="position: relative; left: 10rpx; top: -6rpx">            
+      <text bindtap="colorchange7" class="{{round[6].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}"style="position: relative;" style="position: relative; left: 8rpx; top: 0rpx">强生</text>
+      <text bindtap="likecolorchange7"class="{{like[6].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 200rpx; top: 0rpx">{{number[6]}}</text> 
     </view>
   </view>
 </view>
@@ -188,59 +190,47 @@
   <view class="flex-wrp">
     <image src="https://s1.ax1x.com/2022/07/02/j10QbT.png"  style="width:388rpx;height:476rpx;"> </image>
     <view class="text-gray text-sm">   
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>   
-      <text class="cuIcon-round margin-lr-xs"></text> 
-      <text decode="{{true}}" space="{{true}}">贝壳育儿&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-like margin-lr-xs"></text> 1799
+      <text bindtap="colorchange6" class="{{round[5].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 29rpx; top: 12rpx">贝壳育儿</text>
+      <text bindtap="likecolorchange6" class="{{like[5].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 136rpx; top: 12rpx">{{number[5]}}</text> 
      </view>
   </view>
   <view class="flex-wrp" >
     <image src="https://s1.ax1x.com/2022/07/02/j1y39g.png"  style="width:376rpx;height:494rpx;"></image>
     <view class="text-gray text-sm">   
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>   
-      <text class="cuIcon-round margin-lr-xs"></text> 
-      <text decode="{{true}}" space="{{true}}">Nest Desings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-like margin-lr-xs"></text> 576
+      <text bindtap="colorchange5"class="{{round[4].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 22rpx; top: 3rpx">Nest Desings</text>
+      <text bindtap="likecolorchange5"class="{{like[4].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 106rpx; top: 3rpx">{{number[4]}}</text> 
     </view>
   </view>
 </view>
 <view class="flex-wrp-group">
   <view class="flex-wrp">
     <image src="https://s1.ax1x.com/2022/07/02/j101VU.png" style="width:402rpx;height:488rpx;"></image>
-    <view class="text-gray text-sm"> 
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>   
-      <text class="cuIcon-round margin-lr-xs"></text> 
-      <text decode="{{true}}" space="{{true}}">汤米盖文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-like margin-lr-xs"></text> 1324
+    <view class="text-gray text-sm"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 10rpx; top: -6rpx"> 
+      <text bindtap="colorchange4"class="{{round[3].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 29rpx; top: 0rpx">汤米盖文</text>
+      <text bindtap="likecolorchange4" class="{{like[3].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative; left: 150rpx; top: 0rpx">{{number[3]}}</text> 
     </view>
   </view>
   <view class="flex-wrp">
     <image src="https://s1.ax1x.com/2022/07/02/j10MrV.png" style="width:412rpx;height:532rpx;"></image>
     <view class="text-gray text-sm">  
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text> 
-      <text class="cuIcon-round margin-lr-xs"></text> 
-      <text decode="{{true}}" space="{{true}}">赖步慈旗舰店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-like margin-lr-xs"></text> 678
+      <text bindtap="colorchange3"class="{{round[2].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 26rpx; top: 0rpx">赖步慈旗舰店</text>
+      <text bindtap="likecolorchange3" class="{{like[2].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 111rpx; top: 0rpx">{{number[2]}}</text> 
     </view>
   </view>  
 </view>
 <view class="flex-wrp-group">
   <view class="flex-wrp" >
     <image src="https://s1.ax1x.com/2022/07/02/j10KK0.png" style="width:370rpx;height:532rpx;"></image>
-    <view class="text-gray text-sm">   
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-round margin-lr-xs"></text>
-      <text decode="{{true}}" space="{{true}}">强生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-like margin-lr-xs"></text> 
-      <text> 588</text>
+    <view class="text-gray text-sm"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 10rpx; top: -6rpx">   
+      <text bindtap="colorchange2" style="position: relative; left: 19rpx; top: 0rpx" class="{{round[1].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}">强生</text>
+      <text bindtap="likecolorchange2" class="{{like[1].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}"style="position: relative; left: 176rpx; top: 0rpx" >{{number[1]}}</text> 
     </view>
   </view>
   <view class="flex-wrp" >
     <image src="https://s1.ax1x.com/2022/07/02/j103aF.png" style="width:402rpx;height:506rpx;"></image>
-    <view class="text-gray text-sm">   
-      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>
-      <text class="cuIcon-round margin-lr-xs"></text> The DaisyFlor...
-      <text class="cuIcon-like margin-lr-xs"></text> 1478 
+    <view class="text-gray text-sm"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 10rpx; top: -6rpx">   
+      <text bindtap="colorchange1" class="{{round[0].click==false?'cuIcon-roundcheckfill text-green':'cuIcon-round'}}"style="position: relative; left: 150rpx; top: 0rpx" style="position: relative; left: 19rpx; top: 0rpx">The DaisyFlor...</text> 
+      <text bindtap="likecolorchange1" style="position: relative; left: 57rpx; top: 0rpx"class="{{like[0].click==false?'cuIcon-likefill text-red':'cuIcon-like'}}">{{number[0]}}</text> 
     </view>
   </view>  
 </view>
@@ -254,7 +244,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/3a348b80a0fe59e0.png"></image>
       </view>
-      <view class="content">这两个多月很多妈妈来私信我月子餐的做法，这边就向大家推荐按照产后月份进行不同的月子餐搭配。首先我们来学习……</view>
+      <view class="knowledge-content">这两个多月很多妈妈来私信我月子餐的做法，这边就向大家推荐按照产后月份进行不同的月子餐搭配。首先我……</view>
       <view class="other">
         <view class="comment">140赞同·33评论</view>
         <view class="more">…</view>
@@ -266,7 +256,7 @@
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/37e943ea1dc95e53.png"></image>
       </view>
       <view class="myvideo">
-        <video id="video" src="https://haokan.baidu.com/v?vid=4153233775546916303&pd=pcshare"></video>
+        <video id="video" src="cloud://young-guide-4g4dq6x2752d9aed.796f-young-guide-4g4dq6x2752d9aed-1312845525/辅食.mp4"></video>
       </view>  
       <view class="other">
         <view class="comment">35.6万播放·979赞同</view>
@@ -277,7 +267,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/175a17254760c1bc.png"></image>
       </view>
-      <view class="content">宝宝在4-6个月后，开始添加辅食了。除了购买成品辅食，在家自制辅食不仅更安全、更营养、更新鲜，而且更经济……</view>
+      <view class="knowledge-content">宝宝在4-6个月后，开始添加辅食了。除了购买成品辅食，在家自制辅食不仅更安全、更营养、更新鲜，而且更……</view>
       <view class="other">
         <view class="comment">166赞同·34评论</view>
         <view class="more">…</view>
@@ -288,7 +278,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/86093784b1e93550.png"></image>
       </view>
-      <view class="content">42天科学月子餐清单，可供妈妈们快速恢复瘦身 + 下奶，分享给准备在家坐月子的妈妈们，可以按照这份清单让家里……</view>
+      <view class="knowledge-content">42天科学月子餐清单，可供妈妈们快速恢复瘦身 + 下奶，分享给准备在家坐月子的妈妈们，可以按照这份清单……</view>
       <view class="other">
         <view class="comment">148赞同·24评论</view>
         <view class="more">…</view>
@@ -299,7 +289,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/cab9eaad7343d242.png"></image>
       </view>
-      <view class="content">根据《中国产褥期妇女膳食建议》，再结合月子期妈妈的身体状态，月子期饮食应该遵循以下三点：1.增加富含优质蛋……</view>
+      <view class="knowledge-content">根据《中国产褥期妇女膳食建议》，再结合月子期妈妈的身体状态，月子期饮食应该遵循以下三点：1.增加富……</view>
       <view class="contentimage1">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/6e98f8cdf119991b.jpg"></image>
       </view>
@@ -313,13 +303,14 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/961e315c7ffd1265.png"></image>
       </view>
-      <view class="content">无论是吃母乳还是配方奶，新手妈妈对奈良的把握都相当谨慎。吃太多怕宝宝常委承受不了，吃不饱又担心营养跟……</view>
+      <view class="knowledge-content">无论是吃母乳还是配方奶，新手妈妈对奈良的把握都相当谨慎。吃太多怕宝宝常委承受不了，吃不饱又担心……</view>
       <view class="other">
         <view class="comment">268赞同·53评论</view>
         <view class="more">…</view>
       </view>
     </view>
     <view class="loading">正在加载……</view>
+    <text>\n\n</text>
   </block>
 
   <!--产后恢复-->
@@ -329,7 +320,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/cab9eaad7343d242.png"></image>
       </view>
-      <view class="content">产后妈妈合理补充营养，适当休息和运动，有利于身体快速恢复。但很多妈妈容易在产后调养的路上犯下9种错误，反……</view>
+      <view class="knowledge-content">产后妈妈合理补充营养，适当休息和运动，有利于身体快速恢复。但很多妈妈容易在产后调养的路上犯下9种……</view>
       <view class="other">
         <view class="comment">202赞同·38评论</view>
         <view class="more">…</view>
@@ -340,7 +331,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/961e315c7ffd1265.png"></image>
       </view>
-      <view class="content">产后运动不仅能促进身体各部位的恢复，还能预防或改善一些不适症状，此外对身材的恢复也有好处。不过产后运动讲……</view>
+      <view class="knowledge-content">产后运动不仅能促进身体各部位的恢复，还能预防或改善一些不适症状，此外对身材的恢复也有好处。不过产……</view>
       <view class="contentimage">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/6584eeca8fd4250b.jpg"></image>
       </view>
@@ -354,7 +345,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/175a17254760c1bc.png"></image>
       </view>
-      <view class="content">铺天盖地的骨盆修复广告，总是让生完宝宝后身材变形的妈妈们蠢蠢欲动，然而，看似神奇的骨盆修复，实际上是一场……</view>
+      <view class="knowledge-content">铺天盖地的骨盆修复广告，总是让生完宝宝后身材变形的妈妈蠢蠢欲动，然而，看似神奇的骨盆修复，实际……</view>
       <view class="other">
         <view class="comment">166赞同·34评论</view>
         <view class="more">…</view>
@@ -365,7 +356,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/37e943ea1dc95e53.png"></image>
       </view>
-      <view class="content">产后恢复是一项大工程，妈妈们需要好好休养、做好护理，让身体更快地恢复，其中包括分娩伤口的恢复。针对顺产和……</view>
+      <view class="knowledge-content">产后恢复是一项大工程，妈妈们需要好好休养、做好护理，让身体更快地恢复，其中包括分娩伤口的恢复……</view>
       <view class="other">
         <view class="comment">127赞同·26评论</view>
         <view class="more">…</view>
@@ -376,7 +367,7 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/3a348b80a0fe59e0.png"></image>
       </view>
-      <view class="content">相信产后瘦身一直以来都是很多妈妈们挂心的事情，然而产后瘦身这件事既不能过早也不能过晚，那么它的最佳时机是……</view>
+      <view class="knowledge-content">相信产后瘦身一直以来都是很多妈妈们挂心的事情，然而产后瘦身既不能过早也不能过晚，那么它的最佳时……</view>
       <view class="other">
         <view class="comment">79赞同·18评论</view>
         <view class="more">…</view>
@@ -387,14 +378,15 @@
       <view class="people">
         <image src="https://s3.bmp.ovh/imgs/2022/07/02/37e943ea1dc95e53.png"></image>
       </view>
-      <view class="content">1.剖宫产伤口护理注意事项：……</view>
-      <view class="content">2.剖宫产收的饮食……</view>
+      <view class="knowledge-content">1.剖宫产伤口护理注意事项：……</view>
+      <view class="knowledge-content">2.剖宫产收的饮食……</view>
       <view class="other">
         <view class="comment">227赞同·34评论</view>
         <view class="more">…</view>
       </view>
     </view>
     <view class="loading">正在加载……</view>
+    <text>\n\n</text>
   </block>
   </Tab>
 </view>
@@ -410,7 +402,7 @@
   </view>
 
   <view class="imagelogo radius shadow-warp " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-  <image src="/images/index/Logo.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
+    <image src="https://s1.ax1x.com/2022/07/06/jaJ6M9.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
   </view>
 
   <view class="action" style="color:rgb(51, 51, 102)">
@@ -429,33 +421,28 @@
 </view>
 
 <!-- 操作条表面 -->
-<record wx:if="{{PageCur=='record'}}"></record>
-<remind wx:if="{{PageCur=='remind'}}"></remind>
-<knowledge wx:if="{{PageCur=='knowledge'}}"></knowledge>
-<me wx:if="{{PageCur=='me'}}"></me>
-
 <view class="cu-bar tabbar bg-white shadow foot" style="border-radius: 50rpx">
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="record">
-    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>record
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange1" data-cur="record">
+    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>记录
   </view>
 
-  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="remind" >
-    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>remind
+  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange2" data-cur="remind" >
+    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>提醒
   </view>
 
   <view class="imagelogo radius shadow " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-    <image src="/images/index/Logo.png" style="width: 140rpx; height: 140rpx; border-radius: 117rpx; position: relative; left: 5rpx; top: 17rpx"></image>
+    <image src="https://s1.ax1x.com/2022/07/06/jaJ6M9.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: absolute; left: 298rpx; top: -80rpx"></image>
   </view>
 
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="knowledge">
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange3" data-cur="knowledge">
     <view class='cuIcon-read' style="margin-top: 15rpx;">
       <view class="cu-tag badge"></view>
-    </view>knowledge
+    </view>科普
   </view>
 
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="me" >
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange4" data-cur="me" >
     <view class='cuIcon-myfill' style="margin-top: 15rpx;">
       <view class="cu-tag badge"></view>
-    </view>me
+    </view>我的
   </view>
 </view>

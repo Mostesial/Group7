@@ -1,32 +1,75 @@
-// pages/me/me.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    PageCur: 'basics',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    PageCur:'me',
+    avatarUrl:"https://s1.ax1x.com/2022/07/06/jaJ6M9.png",
+    nickName:'还未授权头像昵称',
   },
 
+  NavChange1(e) {
+    wx.switchTab({
+      url: '/pages/record/record',
+    })
+  },
+  NavChange2(e) {
+    wx.switchTab({
+      url: '/pages/remind/remind',
+    })
+  },
+  NavChange3(e) {
+    wx.switchTab({
+      url: '/pages/knowledge/knowledge',
+    })
+  },
+  NavChange4(e) {
+    wx.switchTab({
+      url: '/pages/me/me',
+    })
+  },
+
+ gotoidea() { wx.redirectTo({
+    url:"/pages/me/idea/idea"
+  })},
+  gotocollect() { 
+    wx.redirectTo({
+    url:"/pages/me/collect/collect"
+  })},
+  gotoname() { 
+    wx.redirectTo({
+  url:"/pages/me/name/name" 
+  })},
+  
+  gototeaching() { 
+    wx.redirectTo({
+    url:"/pages/me/teaching/teaching" 
+  })},
+  gotosetting() { 
+    wx.redirectTo({
+    url:"/pages/me/setting/setting" 
+  })},
   // 事件处理函数
   NavChange(e) {
     this.setData({
       PageCur: e.currentTarget.dataset.cur
     })
   },
-
-  onLoad() {
-    if (wx.getUserProfile) {
+ 
+  
+  onLoad(option) {
+    var user=wx.getStorageSync('user')
+    console.log(user)
+    var nickName =user.nickName 
+    var avatarUrl =user.avatarUrl
       this.setData({
-        canIUseGetUserProfile: true
+        nickName: nickName
       })
-    }
-  },
+      this.setData({
+        avatarUrl: avatarUrl
+      })
+},
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
     wx.getUserProfile({
@@ -48,4 +91,7 @@ Page({
       hasUserInfo: true
     })
   },
+  onShareAppMessage() {
+
+  }
 })

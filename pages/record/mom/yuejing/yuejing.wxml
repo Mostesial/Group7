@@ -1,5 +1,14 @@
 <!--pages/record/mom/yuejing/yuejing.wxml-->
-<view class="text">经期记录</view> 
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToBaby"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      经期记录
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
+
 <form>
 	<view class="cu-form-group" style="margin-left: 15rpx; margin-right: 15rpx;">
 		<view class="text2">起始</view>
@@ -54,7 +63,15 @@
   
     <view class="cu-form-group" style="margin-left: 15rpx; margin-right: 15rpx;"></view>
 
-    <view class="padding flex flex-direction">
-        <button class="cu-btn round lg bg-purple lg text-pink" bindtap="queding"  style="width: 500rpx; height: 80rpx; display: flex; box-sizing: border-box; left:0rpx; top: 50rpx; position: relative">确定</button>
-    </view>	
+<view class="ebutton">
+  <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 50rpx" bindtap="queding" >
+  确认</button>
+</view>
 </form>
+
+<view class="text4" style="position: relative; left: 75rpx; top: 90rpx">已记录日期（{{yuejingList.length}}）
+    <view class="wei_box" wx:for="{{yuejingList}}" wx:key="index"style="position:relative" style="position: relative; left: 8rpx; top: 29rpx;display: flex;">
+      <text  class="text-pink">{{item.date}}</text>
+	    <text class="cuIcon-roundclose text-pink" bindtap='nodelete' data-index="{{index}}"style="position: relative;" style="position: relative; left: 320rpx; top: 0rpx"></text>
+    </view>
+  </view>

@@ -1,5 +1,14 @@
 <!--pages/record/baby/excrete/excrete.wxml-->
-<view class="text">便便</view> 
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToBaby"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      便便记录
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
+
 <form>
 	<view class="cu-form-group">
 		<view class="text2">日期</view>
@@ -11,7 +20,7 @@
   <view class="cu-form-group1">
 		<view class="text2">时间</view>
     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-		<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
+		<picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="TimeChange">
 			<view class="picker text-gray" >{{time}}</view>
 		</picker>
 	</view>
@@ -39,6 +48,8 @@
         <text class="text3">红色</text> 
       </view>
     </scroll-view>
+    <view class="text3"style="position:relative" style="position: relative; left: 0rpx; top: 17rpx">
+     {{neirong0}}</view>
   </view>
   <view class="cu-form-group">
     <view class="text2">便便状态</view>
@@ -61,12 +72,21 @@
         <text class="text3">较干</text> 
       </view>
       <view class="cu-item2 {{5==TabCur1?'bg-pink  cur':''}}" bindtap="tabSelect1" data-id="5">
-        <text class="text3">很硬</text> 
+        <text class="text3">干硬</text> 
       </view>
     </scroll-view>
+    <view class="text3"style="position:relative" style="position: relative; left: 0rpx; top: 17rpx">
+     {{neirong}}</view>
   </view> 
   <view class="cu-form-group"></view>
   <view class="padding flex flex-direction">
-    <button class="cu-btn round lg bg-purple lg text-pink" bindtap="queding"  style="width: 500rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">确定</button>
+    <button class="cu-btn round" style="font-size: 30rpx; width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: 10rpx; top: -83rpx" bindtap="queding">确认</button>
   </view>	
+  <view class="text4" style="position: relative; left: 75rpx; top: 20rpx">已记录日期（{{BBList.length}}）
+    <view class="wei_box" wx:for="{{BBList}}" wx:key="index"style="position:relative" style="position: relative; left: 8rpx; top: 29rpx;display: flex;">
+      <text  class="text-pink">{{item.date}}</text>
+      <text  class="text-pink" style="margin-left: 50rpx;">{{item.time}}</text>
+	    <text class="cuIcon-roundclose text-pink" bindtap='nodelete' data-index="{{index}}"style="position: relative;" style="position: relative; left: 180rpx; top: 0rpx"></text>
+    </view>
+  </view>
 </form>

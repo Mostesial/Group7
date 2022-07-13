@@ -1,6 +1,8 @@
 /**app.wxss**/
 @import "colorui/main.wxss";
 @import "colorui/icon.wxss";
+@import "colorui/animation.wxss";
+@import "colorui/animate_BSJ.wxss";
 
 .container {
   height: 100%;

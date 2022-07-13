@@ -1,20 +1,20 @@
 <!--pages/information/information.wxml-->
 <view animation="{{animationData1}}">
-<image class='redC' src='/images/index/redC.png'></image>
+  <image class='redC' src='https://img.gejiba.com/images/bbd9f09660acd53fb9f45395b4ace95d.png'></image>
 </view>
 <view animation="{{animationData2}}">
-<image class='pinkC1' src='/images/index/pinkC.png'></image>
+<image class='pinkC1' src='https://img.gejiba.com/images/7d06a5a684e8f5b77357f063bc139a23.png'></image>
 </view>
 <view animation="{{animationData3}}">
-<image class='pinkC2' src='/images/index/pinkC.png'></image>
+<image class='pinkC2' src='https://img.gejiba.com/images/7d06a5a684e8f5b77357f063bc139a23.png'></image>
 </view>
 <view animation="{{animationData4}}">
-<image class='purpleC' src='/images/index/purpleC.png'></image>
+<image class='purpleC' src='https://img.gejiba.com/images/03b0c82cff5fc7ba2673ca356b39664c.png'></image>
 </view>
-<view class="section1">
+<view class="section1" >
   <view class="section__title">我的身份：</view>
   <picker bindchange="bindPickerChange1" value="{{index}}" range="{{sex}}">
-    <view class="picker">
+    <view class="picker text-gray">
       {{sex[index1]}}
     </view>
   </picker>
@@ -23,7 +23,7 @@
 <view class="section">
   <view class="section__title">宝宝性别：</view>
   <picker bindchange="bindPickerChange2" value="{{index}}" range="{{babysex}}">
-    <view class="picker">
+    <view class="picker text-gray">
       {{babysex[index2]}}
     </view>
   </picker>
@@ -31,8 +31,8 @@
 
 <view class="section">
   <view class="section__title">宝宝生日：</view>
-  <picker mode="date" value="{{date}}" start="2018-09-01" end="2023-09-01" bindchange="bindDateChange">
-    <view class="picker">
+  <picker mode="date" value="{{date}}" start="2018-09-01" end="2999-09-01" bindchange="bindDateChange">
+    <view class="picker text-gray">
       {{date}}
     </view>
   </picker>
@@ -41,10 +41,10 @@
 <view class="section">
   <view class="section__title">出生孕周：</view>
   <picker bindchange="bindPickerChange3" value="{{index}}" range="{{babytime}}">
-    <view class="picker">
+    <view class="picker text-gray">
       {{babytime[index3]}}
     </view>
   </picker>
 </view>
 
-<button class="enter" bindtap="enter">Enter</button>
+<button class="enter" bindtap="enter">进入</button>

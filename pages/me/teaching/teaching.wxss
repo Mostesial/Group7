@@ -4,7 +4,7 @@ page{
 }
 
 .xuezaizheda{
-  margin-top: 200rpx;
+  margin-top: 120rpx;
 }
 .website{
   margin-top: 25rpx;

@@ -5,7 +5,7 @@ page{
 }
 .idea{
   margin-left: 50rpx;
-  margin-top: 80rpx;
+  margin-top: 10rpx;
   width: 95%;
 }
 .content{
@@ -23,4 +23,8 @@ page{
   background-color: #333366;
   color:#ffcccc;
   border-radius: 50rpx;
+}
+.ebutton{
+  margin-left: 270rpx;
+  margin-bottom: 200rpx;
 }

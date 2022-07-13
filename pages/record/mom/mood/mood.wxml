@@ -1,47 +1,47 @@
 <!--pages/record/mom/mood/mood.wxml-->
-<view class="cu-bar bg-white">
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
     <view class="action">
-      <text class="cuIcon-back text-gray"></text> 
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToBaby"></text> 
     </view>
-    <view class="content text-bold" style="color: #333366;">
-      心情记录
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      心情日记
     </view>
 </view>
+<view style="width: 750rpx;height: 100rpx;"></view>
 
-<view class="riqi1">   
-    <view class="riqi-name">日期</view>
-      <picker style="font-size: 35rpx; width: 453rpx; height: 51rpx; display: flex; box-sizing: border-box" mode="date" class="riqi-time" value="{{date}}" start="2022-01-01" end="2024-09-01" bindchange="DateChange">
-			<view class="picker"  style="width: 256rpx; height: 44rpx; display: block; box-sizing: border-box;margin-left: 40rpx;">
-				{{date}}
-			</view>
-      </picker>
-  </view>
+<view class="cu-form-group">
+		<view class="riqi-name">日期</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+		<picker mode="date" value="{{date}}" start="2010-09-01" end="2999-09-01" bindchange="DateChange">
+			<view class="picker text-gray">{{date}}</view>
+		</picker>
+	</view>
 
   <view class="riqi2" style="width: 650rpx; height: 250rpx; display: flex; box-sizing: border-box">    
   <view class="beizhu-name">日记</view>
-  <textarea class="shuru" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="记录一下今天的心情吧"  style="position: relative; left: -26rpx; top: 0rpx; width: 410rpx; height: 176rpx; display: block; box-sizing: border-box;font-size: 35rpx;" placeholder-class="shurun-name"></textarea>
+  <textarea class="shuru" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="记录一下今天的心情吧"  style="position: relative; left: -26rpx; top: -10rpx; width: 400rpx; height: 180rpx; display: block; box-sizing: border-box;font-size: 30rpx;" placeholder-class="shurun-name"></textarea>
 </view>
 
 <view class="riqi3">
 <view class="beizhu-name">心情</view>
 <view class="mood-choice" style="width: 750rpx; height: 512rpx; display: block; box-sizing: border-box">
-<view class="mood-1">
-<button class="b-1" class="c-1" style="width: 213rpx; position: relative; left: -150rpx; top: 0rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic1.png" class="pic"></image> </button>
-<button class="b-2" class="c-2" style="width: 213rpx; position: relative; left: 28rpx; top: -158rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic2.png" class="pic"></image> </button>
-<button class="b-3"style="width:20%;" style="position: relative; left: 203rpx; top: -316rpx; width: 213rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic3.png"class="pic"></image> </button>
+<view class="mood-1" style="margin-top: 30rpx;">
+  <button class="b-1" style="width: 213rpx; position: relative; left: -150rpx; top: 0rpx; height: 158rpx; display: block; box-sizing: border-box" bindtap="chosemood" data-id="非常棒"><image src="https://s1.ax1x.com/2022/07/06/ja3bq0.png" class="pic"></image> </button>
+<button class="b-2" style="width: 213rpx; position: relative; left: 28rpx; top: -158rpx; height: 158rpx; display: block; box-sizing: border-box"   bindtap="chosemood"data-id="愉悦"><image src="https://s1.ax1x.com/2022/07/06/ja8Cs1.png" class="pic"></image> </button>
+<button class="b-3"bindtap="chosemood" data-id="平静"style="width:20%;" style="position: relative; left: 203rpx; top: -316rpx; width: 213rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8ViD.png"class="pic"></image> </button>
 </view>
-<button class="b-4" style="width: 213rpx; position: relative; left: -150rpx; top: -316rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic4.png" class="pic"></image> </button>
-<button class="b-5" style="width: 213rpx; position: relative; left: 28rpx; top: -474rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic5.png" class="pic"></image> </button>
-<button class="b-6" style="width: 213rpx; position: relative; left: 203rpx; top: -631rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic6.png" class="pic"></image> </button>
-<button class="b-7" style="width: 213rpx; position: relative; left: -150rpx; top: -631rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic7.png" class="pic"></image> </button>
-<button class="b-8" style="width: 213rpx; position: relative; left: 28rpx; top: -789rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic8.png" class="pic"></image> </button>
-<button class="b-9" style="width: 213rpx; position: relative; left: 203rpx; top: -947rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="/images/pic9.png" class="pic" style="position: relative; left: -6rpx; top: 0rpx"></image> </button>
+<button class="b-4" bindtap="chosemood"data-id="累"style="width: 213rpx; position: relative; left: -150rpx; top: -316rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8mzd.png" class="pic"></image> </button>
+<button class="b-5"bindtap="chosemood" data-id="忧郁"style="width: 213rpx; position: relative; left: 28rpx; top: -474rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8leP.png" class="pic"></image> </button>
+<button class="b-6"bindtap="chosemood" data-id="困觉"style="width: 213rpx; position: relative; left: 203rpx; top: -631rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8GFS.png" class="pic"></image> </button>
+<button class="b-7"bindtap="chosemood" data-id="快哭了"style="width: 213rpx; position: relative; left: -150rpx; top: -631rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8tzj.png" class="pic"></image> </button>
+<button class="b-8"bindtap="chosemood" data-id="好气哦"style="width: 213rpx; position: relative; left: 28rpx; top: -789rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8dLq.png" class="pic"></image> </button>
+<button class="b-9" bindtap="chosemood"data-id="生气"style="width: 213rpx; position: relative; left: 203rpx; top: -947rpx; height: 158rpx; display: block; box-sizing: border-box"><image src="https://s1.ax1x.com/2022/07/06/ja8RyR.png" class="pic" style="position: relative; left: -6rpx; top: 0rpx"></image> </button>
 </view>
 </view>
 
 
 
 <view class="ebutton">
-  <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 106rpx">
+  <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 80rpx" bindtap="queding">
   确认</button>
 </view>

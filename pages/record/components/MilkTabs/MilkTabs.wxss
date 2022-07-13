@@ -31,5 +31,5 @@
 .active{
   font-weight: bold;
   color:#333366;
-  border-bottom:5rpx solid #333366;
+  border-bottom:3rpx solid #333366;
 }

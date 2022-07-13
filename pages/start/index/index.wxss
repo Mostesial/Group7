@@ -1,4 +1,8 @@
 /* pages/index/index.wxss */
+page{
+  background-color: white;
+}
+
 .con-logo{
   margin-top: 50rpx;
   display:flex;
@@ -16,6 +20,9 @@
   font-size: large;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text{
+  text-align: center;
 }
 .bottom{
   display: flex;

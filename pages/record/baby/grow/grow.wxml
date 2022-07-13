@@ -1,5 +1,14 @@
 <!--pages/record/baby/grow/grow.wxml-->
-<view class="text">生长记录</view> 
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToBaby"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      生长记录
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
+
 <form>
 	<view class="cu-form-group">
 		<view class="text2">日期</view>
@@ -11,19 +20,19 @@
 	<view class="cu-form-group">
 		<view class="text2">身高</view>
     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-		<input placeholder="请输入身高" value="{{HEIGHT}}" bindinput="inputHeight"></input>
+		<input placeholder="请输入身高" value="{{HEIGHT}}" bindinput="inputHeight" style="width: 345rpx; height: 46rpx; display: block; box-sizing: border-box" type="digit"></input>
 		<text class="text2">cm</text>
 	</view>
   <view class="cu-form-group">
 		<view class="text2">体重</view>
     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-		<input placeholder="请输入体重" value="{{WEIGHT}}" bindinput="inputWeight"></input>
+		<input placeholder="请输入体重" value="{{WEIGHT}}" bindinput="inputWeight" style="width: 345rpx; height: 46rpx; display: block; box-sizing: border-box" type="digit"></input>
 		<text class="text2">kg</text>
 	</view>
   <view class="cu-form-group">
 		<view class="text2">头围</view>
     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-		<input placeholder="请输入头围" value="{{TOUWEI}}"bindinput="inputTouwei"></input>
+		<input placeholder="请输入头围" value="{{TOUWEI}}"bindinput="inputTouwei" style="width: 345rpx; height: 46rpx; display: block; box-sizing: border-box" type="digit"></input>
 		<text class="text2">cm</text>
 	</view>  
   <view class="cu-form-group">
@@ -31,7 +40,7 @@
     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
     <view class="text-gray">	{{imgList.length}}/4	</view>
      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-    <image bindtap="ChooseImage" wx:if="{{imgList.length<4}}"src="https://s1.ax1x.com/2022/07/03/j8QOlF.png" style="width:80rpx;height:80rpx;" ></image> 
+    <image bindtap="ChooseImage" wx:if="{{imgList.length<4}}"src="https://s1.ax1x.com/2022/07/03/j8QOlF.png" style="width: 80rpx; height: 80rpx; position: relative; left: 10rpx; top: 0rpx" ></image> 
   </view>
   <view class="shuangchuan"> 
 	  <view class="grid col-4 grid-square flex-sub">		 
@@ -43,10 +52,16 @@
 		  </view>
 	  </view>
   </view>
-  <view class="cu-form-group"></view>
+
   <view class="padding flex flex-direction">
-    <button class="cu-btn round lg bg-purple lg text-pink" bindtap="queding" style="width: 500rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">确定
-      
-    </button>
+    <button class="cu-btn round" style="font-size:30rpx; width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: 0rpx; top: 50rpx" bindtap="queding" >确认</button>
   </view>	
+  
+  <view class="text2" style="position: relative; left: 75rpx; top: 90rpx">已记录日期（{{ValueList1.length}}）
+<view class="wei_box" wx:for="{{ValueList4}}" wx:key="index"style="position:relative" style="position: relative; left: 8rpx; top: 29rpx">
+<text  class="text-pink" >{{item.date}}</text>
+	<text class="cuIcon-roundclose text-pink" bindtap='nodelete' data-index="{{index}}"style="position: relative;" style="position: relative; left: 223rpx; top: 10rpx"></text>
+</view>
+</view>
+<text>\n\n\n\n\n</text>
 </form>

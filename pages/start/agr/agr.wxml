@@ -1,2 +1,11 @@
 <!--pages/幼鸟指南用户协议/幼鸟指南用户协议.wxml-->
-<view><text class="agreement">  阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴</text></view>
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToLogin"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      幼鸟指南用户协议
+    </view>
+</view>
+<view style="width: 500rpx;height: 100rpx;"></view>
+<view><text class="agreement" style="width: 630rpx; height: 94rpx; display: flex; box-sizing: border-box;margin-left: 60rpx;color: #333366;">欢迎使用幼鸟指南！本产品目前仍在开发阶段，期待您的意见与建议反馈！</text></view>

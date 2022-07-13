@@ -1,45 +1,40 @@
-<!--pages/record/baby/sleep/sleep.wxml-->
 <view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
     <view class="action">
-      <text class="cuIcon-back text-gray"></text> 
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToBaby"></text> 
     </view>
-    <view class="content text-bold" style="color: #333366;">
-      睡眠
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      睡眠记录
     </view>
-  </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
 
-  <view class="riqi1" style="width: 650rpx; height: 100rpx; display: flex; box-sizing: border-box">   
-    <view class="riqi-name">日期</view>
-      <picker mode="date" class="riqi-time" value="{{date}}" start="2022-01-01" end="2024-09-01" bindchange="DateChange" style="width: 420rpx; height: 40rpx; display: flex; box-sizing: border-box">
-			<view class="picker text-gray"  style="width: 312rpx; height: 32rpx; display: block; box-sizing: border-box">
-				{{date}}
-			</view>
-      </picker>
-  </view>
-
-  <view class="riqi" style="width: 650rpx; height: 100rpx; display: flex; box-sizing: border-box">
-  <view class="time-name">时间</view>
-  	<view class="cu-form-group">
-		<picker class="timebox" mode="time" value="{{time1}}" start="00:00" end="23:59" bindchange="TimeChange1" style="width: 160rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 18rpx; top: 0rpx; position: relative">
-			<view class="picker text-gray" style="font-size: 35rpx; width: 160rpx; height: 80rpx; display: block; box-sizing: border-box">
-				{{time1}}
-			</view>
+<view class="cu-form-group" style="width: 600rpx; height: 100rpx; display: flex; box-sizing: border-box">
+		<view class="riqi-name">日期</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+		<picker mode="date" value="{{date}}" start="2010-09-01" end="2999-09-01" bindchange="DateChange">
+			<view class="picker text-gray">{{date}}</view>
 		</picker>
 	</view>
-  <view class="guodu">~</view>
-  <view class="cu-form-group" style="width: 220rpx; height: 100rpx; display: flex; box-sizing: border-box">
-		<picker class="timebox" mode="time" value="{{time2}}" start="00:00" end="23:59" bindchange="TimeChange2" style="width: 160rpx; height: 80rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx; position: relative">
-			<view class="picker text-gray" style="font-size: 35rpx; width: 160rpx; height: 80rpx; display: block; box-sizing: border-box">	{{time2}}	</view>
-		</picker>
-	</view>
-  </view>
 
-<view class="riqi" style="width: 650rpx; height: 282rpx; display: flex; box-sizing: border-box">
-  <view class="beizhu-name">备注</view>
-  <textarea class="shuru" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="记录一下你今天的睡眠状态吧"  style="position: relative; left: -26rpx; top: 4rpx; width: 412rpx; height: 220rpx; display: block; box-sizing: border-box" placeholder-class="shurun-name"></textarea>
+<view class="riqi" style="width: 600rpx; height: 100rpx; display: flex; box-sizing: border-box">
+  <view class="riqi-name" style="width: 144rpx; height: 52rpx; display: block; box-sizing: border-box">时长</view>
+  <input  value="{{time}}" style="width: 330rpx; height: 100rpx; display: flex; box-sizing: border-box" type="digit" class="howlong" placeholder="请输入睡眠时长" bindinput="InputTime"></input>
+  <text class="riqi-name">/h</text>
 </view>
 
-  <view class="ebutton">
-  <button class="cu-btn round" style="width: 500rpx; height: 80rpx; background-color: #333366; color: #ffcccc; position: relative; left: 125rpx; top: 0rpx">
+<view class="riqi" style="width: 600rpx; height: 280rpx; display: flex; box-sizing: border-box">
+  <view class="beizhu-name">备注</view>
+  <textarea class="shuru" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="记录一下妈妈今天的睡眠状态吧"  style="position: relative; left: -40rpx; top: -4rpx; width: 350rpx; height: 210rpx; display: block; box-sizing: border-box" placeholder-class="shurun-name"></textarea>
+</view>
+
+
+<view class="ebutton">
+  <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 100rpx" bindtap="queding" >
   确认</button>
 </view>
+<view class="text4" style="position: relative; left: 75rpx; top: 200rpx">已记录日期（{{MSList.length}}）
+    <view class="wei_box" wx:for="{{MSList}}" wx:key="index"style="position:relative" style="position: relative; left: 8rpx; top: 29rpx;display: flex;">
+      <text class="text-pink">{{item.date}}</text>
+	    <text class="cuIcon-roundclose text-pink" bindtap='nodelete' data-index="{{index}}"style="position: relative;" style="position: relative; left: 180rpx; top: 0rpx"></text>
+    </view>
+  </view>

@@ -51,10 +51,7 @@ page{
   border-radius:2px;
 }
 
-.yes{
-  margin-top: 150rpx;
-  font-size: 40rpx;
-  background-color: #333366;
-  color: #ffcccc;
-  border-radius: 50rpx;
+.ebutton{
+  margin-left: 270rpx;
+  margin-top: 40rpx;
 }

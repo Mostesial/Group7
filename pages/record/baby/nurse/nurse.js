@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    howmuch:'',
+    WNList:[],
     time:"请选择时间",
     date:"请选择日期",
     tabs:[
@@ -26,6 +28,53 @@ Page({
     ]    
   },
 
+  BackToBaby(){
+    wx.switchTab({
+      url: '/pages/record/record',
+    })
+  },
+  queding(){
+    if(this.data.date=='请选择日期'){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '未选择日期无法保存',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
+    } else if(this.data.time=='请选择时间'){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '未选择时间无法保存',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
+    } else if(this.data.howmuch==''){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '未输入喂奶量无法保存',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
+    } else{
+    var that = this
+    var WNList = that.data.WNList
+    WNList.push({
+      date:this.data.date,
+      time:that.data.time,
+      howmuch:that.data.howmuch
+    })
+    that.setData({
+      WNList: this.data.WNList,
+      date:"请输入日期",
+      time:"请输入时间",
+      howmuch:""
+    })
+    this.save()
+    wx.switchTab({
+      url: '/pages/record/record',
+    })}
+  },
+
   ItemChange(e){
     const{index}=e.detail;
     let{tabs}=this.data;
@@ -36,16 +85,18 @@ Page({
   },
 
   bindTimeChange(e){
-    console.log(e);
+    var that=this
     this.setData({
-      time:e.detail.value
+      time: e.detail.value
     })
+    this.save()
   },
   bindDateChange(e){
-    console.log(e);
+    var that=this
     this.setData({
-      date:e.detail.value
+      date: e.detail.value
     })
+    this.save()
   },
   bindPickerChange(e){
     console.log(e);
@@ -53,12 +104,36 @@ Page({
       index:e.detail.value
     })
   },
+  inputhowmuch:function(e){
+    var that = this
+    that.setData({
+      howmuch: e.detail.value
+    })
+    this.save()
+  },
+
+  nodelete: function (e) {
+    this.data.WNList.splice(e.currentTarget.dataset.index, 1)
+    this.setData({
+      WNList: this.data.WNList
+    })
+    this.save()
+  },
+
+  save:function(){
+    wx.setStorageSync('WNList', this.data.WNList)
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    var WNnolist = wx.getStorageSync('WNList')
+    if (WNnolist) {
+      this.setData({
+        WNList: WNnolist
+      })
+    }
   },
 
   /**

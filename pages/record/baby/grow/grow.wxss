@@ -1,13 +1,4 @@
-/* pages/record/baby/grow/grow.wxss */
-.text{
-  margin-left:36%;
-  margin-top: 10%;
-  font-size:50rpx;
-  font-style:unset;
-  font-weight:bolder;
-  color:rgb(51, 51, 102);
-  height: 50px;
-}
+
 .text2{
   font-size:40rpx;
   font-style: normal;

@@ -18,6 +18,12 @@ Page({
       },
     ]
   },
+
+  BackToMe(){
+    wx.switchTab({
+      url: '/pages/me/me',
+    })
+  },
   
   ItemChange(e){
     const{index}=e.detail;

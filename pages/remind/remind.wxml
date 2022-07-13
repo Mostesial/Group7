@@ -1,119 +1,95 @@
-<!--pages/remind/remind.wxml-->
-<view class="text">Remind</view> 
+<view>
+  <view style="font-size: 25px; font-weight: bolder; display: flex;justify-content: center;margin-top: 150rpx; margin-bottom: 50rpx;color: #333366;">提醒</view>
+</view>
 
 <!-- 待办事项 -->
-<view class="padding bg-white text-center shadow-warp" style="width: 700rpx; position: relative; left: 26rpx; top: 0rpx">
+<view class="padding bg-white text-center shadow-warp" style="width: 700rpx; position: relative; left: 26rpx; top: 20rpx" > <!-- bindtap="todo" 因为不希望点击就进去-->
   <view class="cu-form-group shadow-warp">
-	  <view class="text1">自定义TODO</view>
-    <button class="cu-btn cuIcon-add icon radius" style="color:rgb(223, 176, 176);border-radius: 23rpx;margin-right: -14rpx;background-color: #FCF0F0;font-size: 47rpx;"></button>
+	  <view class="remind-text1">自定义TODO</view>
+    <button class="cu-btn cuIcon-add icon radius" style="color:rgb(223, 176, 176);border-radius: 23rpx;margin-right: -15rpx;background-color: #FCF0F0;font-size: 47rpx;" bindtap="todo"></button>
   </view>
-  <view class="cu-form-group shadow-warp">
-	  <view class="title">8:00 起床</view>
-	  <checkbox class="round yellow" ></checkbox>
+
+  <view class="cu-form-group shadow-warp" wx:for="{{ValueList}}" wx:key="index">
+    <checkbox class="round yellow" bindtap="done" data-index="{{index}}" checked="{{ValueList[index].check}}"/>
+    <text style="{{ValueList[index].check?'text-decoration: line-through;':''}}">  {{item.date}} {{item.when}} {{item.what}}</text>
+    <button class="cu-btn cuIcon-close icon radius" style="color:rgb(223, 176, 176);border-radius: 23rpx;margin-right: -15rpx;background-color: #FCF0F0;font-size: 42rpx;" bindtap='nodelete' data-index="{{index}}"></button>
   </view>
-  <view class="cu-form-group shadow-warp">
-    <view class="title">9:00 宝宝喂奶</view>
-	  <checkbox class="round yellow" ></checkbox>
-  </view>
-  <view class="cu-form-group shadow-warp">
-	  <view class="title">10:00 做辅食</view>
-	  <checkbox class="round yellow"></checkbox>
-  </view>
+
 </view>
 <text>\n</text>
 
 <!-- 下方布局 -->
 <view class="padding bg-white">
     <view class="flex">
-
-      <view class="flex-sub padding-sm margin-xs radius shadow-warp" style="width: 338rpx; height: 2152rpx; display: block; box-sizing: border-box; top: 0rpx">
-        <view class="text1" >疫苗接种对照表</view> 
-        <view class="text2" style="width: 282rpx; height: 458rpx; display: block; box-sizing: border-box;">
-            <text>\n 出生 \n</text>
-	        <checkbox class="round yellow" ></checkbox>
-            <text> 卡介苗 (第1/1剂) \n</text>
-            <checkbox class="round yellow" ></checkbox>
-            <text> 乙肝疫苗 (第1/3剂)</text>
-
-            <text>\n\n 1月龄 \n</text>
-	        <checkbox class="round yellow" ></checkbox>
-            <text> 乙肝疫苗 (第2/3剂) \n</text>
-
-            <text>\n 2月龄 \n</text>
-	        <checkbox class="round yellow" ></checkbox>
-            <text> 脊髓灰质苗 (第1/4剂) \n</text>
-
-            <text>\n 3月龄 \n</text>
-	        <checkbox class="round yellow" ></checkbox>
-            <text> 脊髓灰质苗 (第2/4剂) \n</text>
-            <checkbox class="round yellow" ></checkbox>
-            <text> 百白破疫苗 (第1/4剂)</text>
-
-            <text>\n\n 4月龄 \n</text>
-	        <checkbox class="round yellow" ></checkbox>
-            <text> 脊髓灰质苗 (第3/4剂) \n</text>
-            <checkbox class="round yellow" ></checkbox>
-            <text> 百白破疫苗 (第2/4剂)</text>
-        </view>
+      <view class="flex-sub padding-sm margin-xs radius shadow-warp" style="width: 338rpx; height: 960rpx; display: block; box-sizing: border-box; top: 0rpx; left: 0rpx">
+        <view class="remind-text1" >疫苗接种对照表</view> 
+        <scroll-view scroll-y="true" class="remind-text2" style="width: 282rpx; height: 850rpx; display: block; box-sizing: border-box;">
+          <checkbox-group bindchange="checkboxChange">
+            <view class="yimiao" wx:for="{{items}}" wx:key="index">
+              <text wx:if="{{item.time!='0'}}">\n</text>
+              <text wx:if="{{item.time!='0'}}" style="font-weight: bolder;">{{item.time}}</text>
+              <text wx:if="{{item.time!='0'}}">\n</text>
+              <checkbox class="round yellow" value="{{item.name}}" checked="{{yimiaoList[index]}}"/>{{item.value}}
+              <text>\n</text>
+            </view>
+          </checkbox-group>
+        </scroll-view>
       </view>
 
-
-      <view class="flex-sub padding-sm margin-xs radius shadow-warp" style="width: 338rpx; height: 2152rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
-        <view class="text1">孕育每一天</view>
-        <!-- <view class="image">
-            <image src="孕育每一天2.jpg" style="width:120px" mode="widthFix"></image>
-        </view> -->
-
+      <view class="flex-sub padding-sm margin-xs radius shadow-warp" style="width: 326rpx; height: 960rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <view class="remind-text1">孕育每一天</view>
+        <scroll-view scroll-y="true" class="height:850rpx;" style="width: 282rpx; height: 860rpx; display: block; box-sizing: border-box">
         <!-- 第一个时间点 -->
         <view class="cu-timeline">
             <view class="cu-item " style="width: 354rpx; height: 279rpx; display: block; box-sizing: border-box; left: -31rpx; top: 0rpx; position: relative;background-color: #fbfaff00">
-                <view class="content shadow-warp" style="width: 211rpx; height: 251rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 251rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>1天 \n</text> 从我诞生的那一刻起到满月，不能再叫我胎儿了，请你们叫我新生儿哦
                 </view> 
             </view>
 
             <view class="cu-item" style="position: relative; left: -31rpx; top: 0rpx; background-color: #fbfaff00; width: 263rpx; height: 310rpx; display: block; box-sizing: border-box">
-                <view class="content shadow-warp" style="width: 211rpx; height: 282rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 282rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>2天 \n</text> 刚出生的我看起来丑丑的，皮肤红红的，四肢像害怕一样蜷曲着，小手握得紧紧的，哭声响亮
                 </view> 
             </view>
 
             <view class="cu-item" style="position: relative; left: -31rpx; top: 0rpx; background-color: #fbfaff00; width: 263rpx; height: 310rpx; display: block; box-sizing: border-box">
-                <view class="content shadow-warp" style="width: 211rpx; height: 279rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 279rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>3天 \n</text> 出生第一周时我的体重会暂时下降，这被称为“生理性体重下降”，放心啦，一般不超过300克
                 </view> 
             </view>
 
             <view class="cu-item" style="position: relative; left: -31rpx; top: -3rpx; background-color: #fbfaff00; width: 263rpx; height: 310rpx; display: block; box-sizing: border-box">
-                <view class="content shadow-warp" style="width: 211rpx; height: 277rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 277rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>4天 \n</text> 出生后我会有一些本能的动作，如果妈妈把手指放到我手边，我就会抓过来，并且抓得死死的
                 </view> 
             </view>
 
             <view class="cu-item" style="position: relative; left: -31rpx; top: 0rpx; background-color: #fbfaff00; width: 263rpx; height: 310rpx; display: block; box-sizing: border-box">
-                <view class="content shadow-warp" style="width: 211rpx; height: 272rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 272rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>5天 \n</text> 当妈妈用手指或乳头接触我的脸颊、嘴唇时，我就会转过头来面对着妈妈，张开嘴巴
                 </view> 
             </view>
 
             <view class="cu-item" style="position: relative; left: -31rpx; top: 0rpx; background-color: #fbfaff00; width: 263rpx; height: 310rpx; display: block; box-sizing: border-box">
-                <view class="content shadow-warp" style="width: 211rpx; height: 268rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 268rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>6天 \n</text> 随着吃奶量的增加，我的体重从第4、5天开始回升，这一周就可以恢复到出生时的体重啦
                 </view> 
             </view>
 
             <view class="cu-item" style="position: relative; left: -31rpx; top: 0rpx; background-color: #fbfaff00; width: 263rpx; height: 87rpx; display: block; box-sizing: border-box">
-                <view class="content shadow-warp" style="width: 211rpx; height: 188rpx; display: block; box-sizing: border-box">
+                <view class="content shadow-warp" style="width: 211rpx; height: 188rpx; display: block; box-sizing: border-box; position: relative; left: -25rpx; top: 0rpx">
                     <text>7天 \n</text> 当我感觉到很大的声音或突然的动作时会自动...
                 </view> 
             </view>
 
         </view>
+      </scroll-view>
         <text>\n</text>
       </view>
     </view>
 </view>
-<text>\n\n\n</text>
+<text>\n\n\n\n</text>
 
 <!-- 操作条背后,可以提供背后的阴影，特别是那个中间的球-->
 <view class="cu-bar tabbar bg-white shadow-warp foot" style="border-radius: 50rpx">
@@ -126,7 +102,7 @@
   </view>
 
   <view class="imagelogo radius shadow-warp " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-  <image src="/images/index/logo.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
+    <image src="https://s1.ax1x.com/2022/07/06/jaJ6M9.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: relative; left: 17rpx; top: 17rpx"></image>
   </view>
 
   <view class="action" style="color:rgb(51, 51, 102)">
@@ -145,33 +121,28 @@
 </view>
 
 <!-- 操作条表面 -->
-<record wx:if="{{PageCur=='record'}}"></record>
-<remind wx:if="{{PageCur=='remind'}}"></remind>
-<knowledge wx:if="{{PageCur=='knowledge'}}"></knowledge>
-<me wx:if="{{PageCur=='me'}}"></me>
-
 <view class="cu-bar tabbar bg-white shadow foot" style="border-radius: 50rpx">
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="record">
-    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>record
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='record'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange1" data-cur="record">
+    <view class='cuIcon-edit' style="margin-top: 15rpx;"></view>记录
   </view>
 
-  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="remind" >
-    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>remind
+  <view class="action" style="color: rgb(51, 51, 102); background-color: {{PageCur=='remind'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange2" data-cur="remind" >
+    <view class='cuIcon-noticefill' style="margin-top: 15rpx;"></view>提醒
   </view>
 
   <view class="imagelogo radius shadow " style="background-color: white;border-radius: 117rpx;margin-top: -117rpx;width: 169rpx;height: 169rpx;">
-    <image src="/images/index/logo.png" style="width: 140rpx; height: 140rpx; border-radius: 117rpx; position: relative; left: 17rpx; top: 17rpx"></image>
+    <image src="https://s1.ax1x.com/2022/07/06/jaJ6M9.png" style="width: 140rpx; height: 140rpx; border-radius: 50px; position: absolute; left: 306rpx; top: -80rpx"></image>
   </view>
 
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="knowledge">
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='knowledge'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange3" data-cur="knowledge">
     <view class='cuIcon-read' style="margin-top: 15rpx;">
       <view class="cu-tag badge"></view>
-    </view>knowledge
+    </view>科普
   </view>
 
-  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange" data-cur="me" >
+  <view class="action" style="color:rgb(51, 51, 102); background-color: {{PageCur=='me'?'#fcdede':'white'}}; border-radius: 100rpx; width: 60rpx; height: 100rpx" bindtap="NavChange4" data-cur="me" >
     <view class='cuIcon-myfill' style="margin-top: 15rpx;">
       <view class="cu-tag badge"></view>
-    </view>me
+    </view>我的
   </view>
 </view>

@@ -1,12 +1,22 @@
 <!--pages/Memore/idea/idea.wxml-->
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToMe"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      意见反馈
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
 
 <view class="idea" style="width: 660rpx; height: 550rpx; display: block; box-sizing: border-box">
   <text class="content">    “幼鸟指南”是一款仍处于开发阶段的程序，我们期待您能够在体验过程序功能后反馈自己使用体验，并对小程序提出一些意见与建议，我们将不断修改，以推出更完善的程序，给予用户更好的使用体验。</text>
   <textarea class="ideainput" placeholder="请描述一下您的使用体验" style="width: 600rpx; height: 300rpx; display: block; box-sizing: border-box; left: 30rpx; top: 53rpx; position: relative"></textarea>
 </view>
-<view style="width: 750rpx; height: 440rpx; display: block; box-sizing: border-box">
-<image src="https://s3.bmp.ovh/imgs/2022/07/05/cd5d05841c755bda.png" style="position: relative; left: 220rpx; top: 70rpx; width: 300rpx; height: 300rpx; display: inline-block; box-sizing: border-box"></image>
+<view style="width: 750rpx; height: 400rpx; display: block; box-sizing: border-box">
+<image src="https://s3.bmp.ovh/imgs/2022/07/05/cd5d05841c755bda.png" style="position: relative; left: 220rpx; top: 50rpx; width: 300rpx; height: 300rpx; display: inline-block; box-sizing: border-box"></image>
 </view>
-<view>
-  <button bindtap="ClickButton" class="submit" style="position: relative; left: 0rpx; top: rpx; width: 400rpx; height: 75rpx; display: block; box-sizing: border-box">提交</button>
+<view class="ebutton">
+  <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 100rpx" bindtap="queding" >
+  确认</button>
 </view>

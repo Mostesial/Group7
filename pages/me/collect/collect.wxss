@@ -4,7 +4,7 @@ page{
 }
 
 .wait{
-  margin-top: 250rpx;
+  margin-top: 200rpx;
   color: #333366;
   font-size: 40rpx;
   display: flex;

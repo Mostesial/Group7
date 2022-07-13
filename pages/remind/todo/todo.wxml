@@ -1,0 +1,51 @@
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="back"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      自定义TODO
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
+<view class="content text-bold" style="color: #333366;font-size: 20px;">
+    日期：
+</view>
+<view class='cu-form-group' >
+    <picker mode="date" style="color: gray;" value="{{date}}" start="2020-09-01" end="2030-09-01" bindchange="bindDateChange">
+        <view class="picker">{{date}}</view>
+    </picker>
+</view>
+<view class="content text-bold" style="color: #333366; font-size: 20px; width: 676rpx; height: 48rpx; display: block; box-sizing: border-box">
+    时间：
+</view>
+<view class='cu-form-group'>
+    <picker mode="time" style="color: gray;" value=" {{when}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="picker">{{when}}</view>
+    </picker>
+</view>
+<view class="content text-bold" style="color: #333366;font-size: 20px;">
+    地点：
+</view>
+<view class='cu-form-group'>
+    <input type='text' style="color: gray;" placeholder='请输入地点' value="{{where}}" bindinput='inputwhere'></input>
+</view>
+  
+<view class="content text-bold" style="color: #333366;font-size: 20px;">
+    事件名称：
+</view>
+<view class='cu-form-group'>
+    <input type='text' style="color: gray;" placeholder='请输入事件名称' value="{{what}}" bindinput='inputwhat'></input>
+</view>
+
+<view class='cu-form-group'>
+    <button class="cu-btn round lg bg-purple md text-pink" style="margin-top: 50rpx;" bindtap='addsearch'>添加日程</button>
+</view>
+
+<view class="cu-form-group1 shadow-warp" wx:for="{{ValueList}}" wx:key="index" style="margin-top: 100rpx;">
+  <checkbox class="round yellow" bindtap='done' data-index="{{index}}" checked="{{ValueList[index].check}}"/>
+  <text>\n {{item.date}}-{{item.when}} \n 地点：{{item.where}} \n 事件：{{item.what}} \n{{ValueList[index].check?'完成时间：' + time + '\n\n':'\n'}} </text>
+  <button class="cu-btn cuIcon-close icon radius" style="color:rgb(223, 176, 176);border-radius: 23rpx;margin-right: 1rpx;background-color: #FCF0F0;font-size: 47rpx;" bindtap='nodelete' data-index="{{index}}"></button>
+</view>
+
+<text>\n\n\n\n\n\n\n</text>
+

@@ -1,28 +1,38 @@
 /* pages/Memore/setting/setting.wxss */
 
 page{
-  background-color: #f5f5f5;
+  background-color:white;
 }
 
 .content1{
-  font-size: 35rpx;
-  margin-top: 20rpx;
+  font-size: 30rpx;
   background-color: white;
   padding-left: 75rpx;
   padding-right: 50rpx;
-  border-bottom:3rpx solid #f5f5f5;
+  border-top:20rpx solid #f5f5f5;
   display: flex;
   align-items: center;
 }
 .content2{
-  font-size: 35rpx;
+  font-size: 30rpx;
   background-color: white;
   padding-left: 75rpx;
   padding-right: 50rpx;
-  border-bottom:3rpx solid #f5f5f5;
+  border-top:5rpx solid #f5f5f5;
   display: flex;
   align-items: center;
 }
+.content3{
+  font-size: 30rpx;
+  background-color: white;
+  padding-left: 75rpx;
+  padding-right: 50rpx;
+  border-top:20rpx solid #f5f5f5;
+  border-bottom: 20rpx solid #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
 .color1{
   color:#333366;
 }

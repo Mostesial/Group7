@@ -1,4 +1,8 @@
 /* pages/reg/reg.wxss */
+page{
+  background-color: white;
+}
+
 .redC{
   position: absolute;
   width: 310rpx;
@@ -47,9 +51,31 @@
   min-width:45px;
   margin-left: 13%;
 }
+checkbox.round .wx-checkbox-input {
+  border-radius: 20rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
 page{
   background-color:rgb(255, 255, 255);
   margin-top:4%;
   min-width: width 80px; 
 }
-
+.fill_box{
+  font-size: 28rpx;
+  flex:1;
+  margin-left:-54rpx;
+}
+.fill_box text{
+  margin-left: -54rpx;
+}
+.fill_box input{
+  margin-left:-54rpx;
+  flex:1
+}
+.noactive{
+  margin-left: 0rpx;
+}
+.active{
+  margin-left: 0rpx;
+}

@@ -1,0 +1,50 @@
+/* pages/information/information.wxss */
+page{
+  background-color: white;
+}
+
+.section1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100rpx;
+  margin-left: 100rpx;
+  border-bottom: 3rpx solid #f5f5f5;
+}
+/**因为要调整首行距离，所以第一列单开了一个格式内容设置**/
+
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  border-bottom: 3rpx solid #f5f5f5;
+}
+/**每行间距与左间距**/
+
+.section__title{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333366;
+}
+/**字体大小、颜色和加粗**/
+
+.picker{
+  width: 360rpx;
+  height: 60rpx;
+  background-color:white;
+  font-size: 40rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 15rpx;
+  padding-top: 2rpx;
+  border-radius:10rpx;
+}
+/**选项picker的字体大小、颜色、边框颜色、圆角**/
+
+.ebutton{
+  margin-left: 270rpx;
+  margin-top: 40rpx;
+}

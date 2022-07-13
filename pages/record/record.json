@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Tabs":"../../components/record/tabs",
+    "ec-canvas": "/ec-canvas/ec-canvas"
+  },
+  "navigationStyle": "custom"
+}

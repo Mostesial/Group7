@@ -1,9 +1,13 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const AV = require('../../../libs/av-core-min');
 
+const app = getApp()
 Page({
   data: {
+    open:false,
+    focus:false,
+    image:'cuIcon-attentionfill',
     username: '',
     password: '',
     animationlogo: {},
@@ -13,25 +17,89 @@ Page({
     animationpinkC:{}
   },
   
+  switch(){
+    this.setData({
+      open:!this.data.open,
+    })
+    if(this.data.open){
+      this.setData({
+        image:'cuIcon-attentionforbidfill'
+      })
+    } else{
+      this.setData({
+        image:'cuIcon-attentionfill'
+      })
+    }
+  },
+  focus(){
+    this.setData({
+      focus:true
+    })
+  },
+  blur(){
+    this.setData({
+      focus:false
+    })
+  },
   inputUsername(e) {
     this.setData({
       username: e.detail.value,
     })
+    console.log(app.globalData.user.username)
   },
   inputPassword(e) {
     this.setData({
       password: e.detail.value,
     })
+    console.log(app.globalData.user.password)
   },
-  register(e){
-    wx.navigateTo({
+  register(){
+    wx.redirectTo({
       url: '/pages/start/reg/reg',
     })
   },
-  login(e){
-    wx.navigateTo({
-      url: '/pages/babez/babez',
+  getUserProfile(){
+    wx.getUserProfile({
+    desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+    success: (res) => {
+      console.log("获取用户信息成功", res)
+      let user = res.userInfo;  //我因为需求用了，但实际上不需要
+      app.globalData.userInfo = res.userInfo; //同上
+      wx.setStorageSync('user', user)  //同上
+    },
+    fail: res => {
+      console.log("获取用户信息失败", res)
+    }
+   })
+  },
+  login(){
+    const{
+      username,
+      password,
+    } = this.data;
+    if(this.data.username==''||this.data.password==''){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '请输入账号密码，如果还未注册请先注册再登入',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
+    }
+    else{
+      this.getUserProfile()
+    AV.User.logIn(username,password).then(function(loginedUser){
+      wx.switchTab({
+        url: '/pages/record/record',
+      })
+    },function(error){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '账号密码错误',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
     })
+    }
   },
 
   onShow: function(){
@@ -91,5 +159,6 @@ Page({
       })
     }.bind(this), 200)
   },
+  onShareAppMessage: function () {}
 })
 

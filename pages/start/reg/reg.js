@@ -1,7 +1,12 @@
+const AV = require('../../../libs/av-core-min');
+
 const app = getApp();
 Page({
   data: {
-    picker: ['中国大陆', '香港', '澳门','中国台湾'],
+    open:false,
+    focus:false,
+    image:'cuIcon-attentionfill',
+    location: ['中国大陆', '香港', '澳门','中国台湾'],
     username: '',
     password: '',
     minname: '',
@@ -11,19 +16,41 @@ Page({
     animationData3: {},
     animationData4: {}
   },
+  switch(){
+    this.setData({
+      open:!this.data.open,
+    })
+    if(this.data.open){
+      this.setData({
+        image:'cuIcon-attentionforbidfill'
+      })
+    } else{
+      this.setData({
+        image:'cuIcon-attentionfill'
+      })
+    }
+  },
+  focus(){
+    this.setData({
+      focus:true
+    })
+  },
+  blur(){
+    this.setData({
+      focus:false
+    })
+  },
   agreement(e){
-    wx.navigateTo({
+    wx.redirectTo({
       url:"/pages/start/agr/agr"
     }) 
   },
   checkboxChange:function(e){
-    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
     this.setData({
       gouxuan:e.detail.value,
     })
   },
   PickerChange(e) {
-    console.log(e);
     this.setData({
       index: e.detail.value
     })
@@ -32,16 +59,24 @@ Page({
     this.setData({
       username: e.detail.value,
     })
+    console.log(app.globalData.user.username)
+    app.globalData.user.username=e.detail.value
+    
   },
   inputPassword(e) {
     this.setData({
       password: e.detail.value,
-    })
+     
+    }) 
+    console.log(app.globalData.user.password)
+    app.globalData.user.password=e.detail.value
   },
   inputMinname(e) {
     this.setData({
       minname: e.detail.value,
     })
+    console.log(app.globalData.user.minname)
+    app.globalData.user.minname=e.detail.value
   },
   register(){
     const {
@@ -51,43 +86,64 @@ Page({
       gouxuan,
     } = this.data;
     if(username=="") {
-      wx.showToast({
-        title:"用户名不能为空",
-        icon: 'error',
-        mask:true,  
-      }); 
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '用户名不能为空',
+        cancelText: '取消',
+        confirmText: '确定',
+      });  
     }
     else if(password=="") {
-      wx.showToast({
-        title:"密码不能为空",
-        icon: 'error',
-      }); 
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '密码不能为空',
+        cancelText: '取消',
+        confirmText: '确定',
+      });  
     }
     else if(minname=="") {
-      wx.showToast({
-        title:"昵称不能为空",
-        icon: 'error',
-        mask:true,  
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '昵称不能为空',
+        cancelText: '取消',
+        confirmText: '确定',
       }); 
     } 
     else if(gouxuan=="") {
-      wx.showToast({
-        title:"请勾选用户协议",
-        icon: 'error',
-        mask:true,  
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '请勾选用户协议',
+        cancelText: '取消',
+        confirmText: '确定',
       }); 
     } 
     else {
-      wx.showToast({
-        title:"注册成功",
-        icon: 'success',
-        duration:5000,
-        mask:true,
-      });
+      AV.User.logIn(username,password).then(function(loginedUser){
+        wx.showModal({
+          title: '亲爱的用户',
+          content: '该账号已注册',
+          cancelText: '取消',
+          confirmText: '确定',
+        }); 
+      },function(error){
+        const user = new AV.User();
+      if(username) user.set({username});
+      if(password) user.set({password});
+      if(minname) user.set({minname});
+      user.save().then(() => {
       wx.redirectTo({
-        url:"/pages/start/info/info",
+        url: '/pages/start/info/info',
       })
-      }   
+      }).catch(error => {
+        wx.showToast({
+        title:error.message,
+        icon:'none'
+        })
+      });
+      })
+
+      
+    }   
   },
 
   onShow: function(){
@@ -137,4 +193,5 @@ Page({
       })
     }.bind(this), 200)
   },
+  onShareAppMessage: function () {}
 })

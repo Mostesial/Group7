@@ -7,7 +7,21 @@ Page({
   data: {
     
   },
-
+  BackToLogin(){
+    wx.redirectTo({
+      url: '/pages/start/login/login',
+    })
+  },
+  gotoinfo() { 
+    wx.redirectTo({
+    url:"/pages/me/setting/info/info"
+  })},
+  BackToMe(){
+    wx.switchTab({
+      url: '/pages/me/me',
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

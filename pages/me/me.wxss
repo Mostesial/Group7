@@ -2,36 +2,23 @@
 page{
   background-color: white;
 }
-.text{
-  margin-left: 45%;
-  margin-top: 20%;
-  font-size: 25px;
-  font-style: unset;
-  font-weight: bolder;
-  color:rgb(51,51,102);
-  height: 50px;
+.me{
+  border-bottom: 3rpx solid #f5f5f5;
 }
-
+.avatarUrl{
+  border-radius: 100%;
+  }
 .container{
   width: 100%;
   height: 200rpx;
-  background-color:white;
   border-top: 3rpx solid #f5f5f5;
   border-bottom:5rpx solid #f5f5f5;
 }
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.text4{
+  font-size:medium;
   color: #333366;
-  font-weight: bolder;
-}
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin-top: -90rpx;
-  border-radius: 50%;
+  font-weight:bolder;
+  text-align: center;
 }
 
 .content{
@@ -42,13 +29,14 @@ page{
   display: flex;
   align-items: center;
 }
-.color1{
+.me-color1{
   color:#333366;
 }
-.color2{
+.me-color2{
   color: #777777;
 }
 .contact{
   display: flex;
   justify-content: space-between;
 }
+

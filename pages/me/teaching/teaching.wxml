@@ -1,4 +1,14 @@
 <!--pages/me/teaching/teaching.wxml-->
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToMe"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      优质早教
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
+
 <view class="xuezaizheda">
   <image src="https://s3.bmp.ovh/imgs/2022/07/05/805f2667ed0e44d3.png" style="width: 320rpx; height: 150rpx; display: inline-block; box-sizing: border-box; left: 220rpx; top: 0rpx; position: relative"></image>  
 </view>

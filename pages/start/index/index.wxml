@@ -1,21 +1,24 @@
 <!--pages/index/index.wxml-->
 <view bindtap="jump">
 <view animation="{{animationData1}}">
-<image class='redC' src='/images/index/redC.png'></image>
+  <image class='redC' src='https://img.gejiba.com/images/bbd9f09660acd53fb9f45395b4ace95d.png'></image>
 </view>
 <view animation="{{animationData2}}">
-<image class='pinkC1' src='/images/index/pinkC.png'></image>
+<image class='pinkC1' src='https://img.gejiba.com/images/7d06a5a684e8f5b77357f063bc139a23.png'></image>
 </view>
 <view animation="{{animationData3}}">
-<image class='pinkC2' src='/images/index/pinkC.png'></image>
+<image class='pinkC2' src='https://img.gejiba.com/images/7d06a5a684e8f5b77357f063bc139a23.png'></image>
 </view>
 <view animation="{{animationData4}}">
-<image class='purpleC' src='/images/index/purpleC.png'></image>
+<image class='purpleC' src='https://img.gejiba.com/images/03b0c82cff5fc7ba2673ca356b39664c.png'></image>
 </view>
 <view class="con-logo">
-<image src='/images/index/Logo.png' class="logo"  animation="{{animationData5}}"></image>
-<text class="title">幼鸟指南\nYOUNG GUIDE</text>
+<image src='https://img.gejiba.com/images/29adf232a6c21280de11c4fafc594c07.png' class="logo"  animation="{{animationData5}}"></image>
+<text class="title" style="color: #333366;">幼鸟指南\nYOUNG GUIDE</text>
 </view>
-<view class="bottom" animation="{{animationData6}}"><text>幼鸟指南 · provided by bmers</text></view>
+
+<view class="text"><text style="position: relative;top:100rpx;color:#333366;">点击开启您的育儿之路</text></view>
+
+<view class="bottom" animation="{{animationData6}}"><text style="color: #333366;">幼鸟指南 · provided by bmers</text></view>
 </view>
 <view class="btn" bindtap="jump"></view>

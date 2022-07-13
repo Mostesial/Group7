@@ -8,11 +8,17 @@ Page({
 
   },
 
-  ClickButton:function(){
+  BackToMe(){
+    wx.switchTab({
+      url: '/pages/me/me',
+    })
+  },
+
+  queding:function(){
     wx.showToast({
       title: '感谢您的反馈',
-      icon: 'success',
-    });
+      icon: 'success'
+    })
   },
 
   /**

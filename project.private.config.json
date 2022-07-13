@@ -1,5 +1,5 @@
 {
-  "projectname": "login",
+  "projectname": "%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%882.0%EF%BC%89%E5%9F%BA%E6%9C%ACOK%E4%BA%86",
   "setting": {
     "compileHotReLoad": true
   },
@@ -8,15 +8,22 @@
     "miniprogram": {
       "list": [
         {
-          "name": "首页",
+          "name": "初始页面",
           "pathName": "pages/start/index/index",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "我的",
-          "pathName": "pages/me/me",
+          "name": "提醒",
+          "pathName": "pages/remind/remind",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "记录",
+          "pathName": "pages/record/record",
           "query": "",
           "launchMode": "default",
           "scene": null
@@ -29,20 +36,84 @@
           "scene": null
         },
         {
-          "name": "总记录页面",
-          "pathName": "pages/babez/babez",
+          "name": "我的",
+          "pathName": "pages/me/me",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "提醒",
-          "pathName": "pages/remind/remind",
+          "name": "登录",
+          "pathName": "pages/start/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "注册",
+          "pathName": "pages/start/reg/reg",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "身份",
+          "pathName": "pages/start/info/info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/record/baby/sleep/sleep",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/record/mom/sleep/sleep",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/record/recordmom",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/record/baby/grow/grow",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/record/baby/nurse/nurse",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/record/mom/weight/weight",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/setting/info/info",
           "query": "",
           "launchMode": "default",
           "scene": null
         }
       ]
     }
-  }
+  },
+  "libVersion": "2.25.0"
 }

@@ -1,19 +1,24 @@
 <!--index.wxml-->
-<image animation="{{animationpurpleC1}}" class="purpleC1" src="/images/login/purpleC.png"></image>
-<image animation="{{animationpurpleC2}}" class="purpleC2" src="/images/login/purpleC.png"></image>
-<image animation="{{animationredC}}" class="redC" src="/images/login/redC.png"></image>
-<image animation="{{animationpinkC}}" class="pinkC" src="/images/login/pinkC.png"></image>
+<image animation="{{animationpurpleC1}}" class="purpleC1" src="https://img.gejiba.com/images/03b0c82cff5fc7ba2673ca356b39664c.png"></image>
+<image animation="{{animationpurpleC2}}" class="purpleC2" src="https://img.gejiba.com/images/03b0c82cff5fc7ba2673ca356b39664c.png"></image>
+<image animation="{{animationredC}}" class="redC" src="https://img.gejiba.com/images/bbd9f09660acd53fb9f45395b4ace95d.png"></image>
+<image animation="{{animationpinkC}}" class="pinkC" src="https://img.gejiba.com/images/7d06a5a684e8f5b77357f063bc139a23.png" ></image>
 <view class="con-logo">
-<image animation="{{animationlogo}}" class="logo" src="/images/index/Logo.png"></image>
-<text class="title">YOUNG GUIDE</text>
+<image animation="{{animationlogo}}" class="logo" src="https://img.gejiba.com/images/29adf232a6c21280de11c4fafc594c07.png" style="width: 250rpx; height: 250rpx; display: block; box-sizing: border-box; left: 0rpx; top: 68rpx"></image>
+<text class="title" style="position: absolute; left: 48rpx; top: 0rpx">YOUNG GUIDE</text>
 </view>
+<view class="section" style="width: 562rpx; height: 146rpx; display: block; box-sizing: border-box">
     <view class='zhanghao' >账号</view>
-    <input value="{{username}}" bindinput="inputUsername" class="info-input"placeholder="请输入注册邮箱" placeholder-style='color=#999999' />
+    <input style="width: 562rpx; height: 76rpx; display: block; box-sizing: border-box"  value="{{username}}" bindinput="inputUsername" class="info-input"placeholder="请输入注册邮箱" placeholder-style='color=#999999' />
+    </view>
+<view class="section1" style="width: 562rpx;height: 146rpx;">
     <view class='mima'>密码</view>
-    <input value="{{password}}" bindinput="inputPassword" class="info-input" placeholder="请输入登录密码" placeholder-style='color=#999999'/>
-   <view class="bottom">
-     <button bindtap="login" class="login" ><image class="loginimage" src="/images/login/picoflogin.png"></image></button>
-     <button bindtap="register" class="login"><image class="registerimage" src="/images/login/picofreg.png" style="position: relative; left: 2rpx; top: 0rpx"></image></button>
-   </view>
+    <view class="section2"style="width: 562rpx;">
+      <input style="width: 494rpx; height: 76rpx; display: block; box-sizing: border-box" value="{{password}}"  password="{{open}}" bindinput="inputPassword" bindfocus="focus" bindblur="blur" class="{{focus?'info-input1':'active'}}" placeholder="请输入登录密码" placeholder-style='color=#999999'/>
+      <text class="{{image}}" catchtap="switch" style="width: 72rpx; height: 76rpx; display: block; box-sizing: border-box; display: flex;align-items: center; justify-content: center;"></text>
+    </view>
+  </view>
+    
+    <image src="https://img.gejiba.com/images/fdca14d3b23d0b575ca05e5e0fa875c9.png" style="position: relative; left: 54rpx; top: -92rpx; width: 320rpx; height: 85rpx; display: inline-block; box-sizing: border-box" bindtap="login"></image>
 
-
+    <image src="https://img.gejiba.com/images/1d4f6fc39936c258955f321ae8e47821.png" style="width: 280rpx; height: 240rpx; display: inline-block; box-sizing: border-box; left: 150rpx; top: -15rpx; position: relative" bindtap="register"></image>

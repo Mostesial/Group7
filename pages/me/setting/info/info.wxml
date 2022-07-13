@@ -1,0 +1,50 @@
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToMe"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      信息修改
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
+
+<view class="section1"  style="width: 550rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="section__title" style="width: 200rpx;display: block; box-sizing: border-box">我的身份：</view>
+  <picker bindchange="bindPickerChange1" value="{{index}}" range="{{sex}}">
+    <view class="picker text-gray" style="width: 300rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{sex[index1]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section" style="width: 550rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="section__title" style="width: 200rpx;display: block; box-sizing: border-box">宝宝性别：</view>
+  <picker bindchange="bindPickerChange2" value="{{index}}" range="{{babysex}}">
+    <view class="picker text-gray" style="width: 300rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{babysex[index2]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section" style="width: 550rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="section__title" style="width: 200rpx;display: block; box-sizing: border-box">宝宝生日：</view>
+  <picker mode="date" value="{{date}}" start="2018-09-01" end="2999-09-01" bindchange="bindDateChange">
+    <view class="picker text-gray" style="width: 300rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class="section" style="width: 550rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="section__title" style="width: 200rpx;display: block; box-sizing: border-box">出生孕周：</view>
+  <picker bindchange="bindPickerChange3" value="{{index}}" range="{{babytime}}">
+    <view class="picker text-gray" style="width: 300rpx; height: 60rpx; display: flex; box-sizing: border-box">
+      {{babytime[index3]}}
+    </view>
+  </picker>
+</view>
+
+<view class="ebutton">
+  <button class="cu-btn round" style="width: 578rpx; height: 84.1rpx; background-color: #333366; color: #ffcccc; position: relative; left: -184rpx; top: 100rpx" bindtap="BackToMee" >
+  确定</button>
+</view>

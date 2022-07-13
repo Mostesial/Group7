@@ -198,8 +198,9 @@ checkbox::before {
 	color: var(--white) !important;
 	top: 50%;
 	margin-top: -8px;
-	right: 1px;
-	font-size: 20rpx;
+	right: 8rpx;
+  font-size: 20rpx;
+  font-weight: bold;
 	line-height: 17px;
 	pointer-events: none;
 	transform: scale(1, 1);
@@ -214,9 +215,9 @@ checkbox .wx-checkbox-input {
 	height: 24px;
 }
 checkbox.round .wx-checkbox-input {
-  border-radius: 100rpx;
-  height: 25rpx;
-  width: 25rpx;
+  border-radius: 10rpx;
+  height: 30rpx;
+  width: 30rpx;
 }
 
 switch .wx-switch-input {
@@ -633,7 +634,7 @@ radio.white[checked] .wx-radio-input {
 
 .shadow-warp {
 	position: relative;
-	box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.2);
 }
 
 .shadow-warp:before,

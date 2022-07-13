@@ -9,7 +9,7 @@ Page({
     animationData6: {}
   },
   jump(e){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/start/login/login'
     })
   },
@@ -31,7 +31,7 @@ Page({
       timingFunction: 'linear',
     })
     var animation5 = wx.createAnimation({
-      duration: 700,
+      duration: 1500,
       timingFunction: 'linear',
     })
     var animation6 = wx.createAnimation({
@@ -82,5 +82,8 @@ Page({
       })
     }.bind(this), 0)
   },
+
+  //用户点击右上角分享
+  onShareAppMessage: function () {},
 })
 

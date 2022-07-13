@@ -21,24 +21,31 @@
   color:rgb(51, 51, 102);
 }
 
-.cu-form-group{
-  margin-top: 2%;
-
-  margin-left: 10%;
-  margin-right: 10%;
+.text4{
+  font-size:38rpx;
+  font-style:inherit;
+  font-weight:bolder;
+  color:rgb(51, 51, 102);
+  margin-bottom: 100rpx;
 }
-.cu-form-group1{
-  margin-top: 2%;
 
+.cu-form-group{
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
 }
 .cu-form-group picker::after {
 	content: "\e74a";
 }
+.cu-form-group1{
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .cu-form-group1 picker::after {
 	content: "\e65f";
 }
+
 .chose{
   margin-left:6%;
   margin-right:6%;
@@ -199,6 +206,8 @@
   margin-left: 0%;
   margin-right: 0%;
 }
+
+
 page{
   background-color:rgb(255, 255, 255);
   margin-top:4%;

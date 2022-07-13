@@ -1,4 +1,3 @@
-// pages/record/mom/yuejing/yuejing.js
 const app = getApp();
 Page({
   data: {
@@ -10,18 +9,64 @@ Page({
     scrollLeft:0,
     select: false,
     yuejingliang: '多',
-    tongjing:'无痛感'
+    tongjing:'无痛感',
+    yuejingList:[]
   },
   
-  queding(){
-    wx.redirectTo({
-      url:"/pages/record1/record1",
+  BackToBaby(){
+    wx.switchTab({
+      url: '/pages/record/recordmom',
     })
   },
+  queding(){
+    if(this.data.date=='请选择日期'){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '未选择起始日期无法保存',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
+    } else if(this.data.date1=='请选择日期'){
+      wx.showModal({
+        title: '亲爱的用户',
+        content: '未选择结束时间无法保存',
+        cancelText: '取消',
+        confirmText: '确定',
+      }); 
+    } else{
+    var that = this
+    var yuejingList = that.data.yuejingList
+    yuejingList.push({
+      date:that.data.date,
+    })
+    that.setData({
+      yuejingList: this.data.yuejingList,
+      date:""
+    })
+    this.save()
+
+    wx.switchTab({
+      url: '/pages/record/recordmom',
+    })}
+  },
+  
+  nodelete: function (e) {
+    this.data.yuejingList.splice(e.currentTarget.dataset.index, 1)
+    this.setData({
+      yuejingList: this.data.yuejingList
+    })
+    this.save()
+  },
+  save:function(){
+    wx.setStorageSync('yuejingList', this.data.yuejingList)
+  },
+
   DateChange(e) {
+    var that=this
     this.setData({
       date: e.detail.value
     })
+    this.save()
   },
   DateChange1(e) {
     this.setData({
@@ -43,7 +88,18 @@ Page({
   },
   
 //   生命周期函数--监听页面加载
-    onLoad: function (options) {},
+  onLoad: function (options) {
+    var yjnolist = wx.getStorageSync('yuejingList')
+    if (yjnolist) {
+      this.setData({
+        yuejingList: yjnolist
+      })
+    }
+  },
+
+  save:function(){
+    wx.setStorageSync('yuejingList', this.data.yuejingList)
+  },
 
     bindShowMsg() {
          this.setData({

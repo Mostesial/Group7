@@ -1,16 +1,26 @@
 <!--pages/Memore/setting/setting.wxml-->
+<view class="cu-bar bg-white" style="position: relative; left: 0rpx; top: 90rpx">
+    <view class="action">
+      <text class="cuIcon-back text-gray" style="width: 80rpx; height: 80rpx; display: block; box-sizing: border-box;display:flex;align-items: center;" bindtap="BackToMe"></text> 
+    </view>
+    <view class="content text-bold" style="color: #333366;font-size: 20px;">
+      设置
+    </view>
+</view>
+<view style="width: 750rpx;height: 100rpx;"></view>
 
 <view class="static">
-  <view class="content1 contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="content1 contact" style="width: 750rpx; height: 100rpx; display: flex; box-sizing: border-box"bindtap="gotoinfo">
     <view class="color1">我的宝宝</view>
     <text class="color2">></text>
   </view>
-  <view class="content2 contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="content2 contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box" bindtap="gotoinfo">
     <view class="color1">我的身份</view>
     <text class="color2">></text>
   </view>
 
-  <view class="content1 contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+
+  <view class="content1 contact" style="width: 750rpx; height: 100rpx; display: flex; box-sizing: border-box">
     <text class="color1">通用</text>
     <text class="color2">></text>
   </view>
@@ -22,11 +32,11 @@
     <text class="color1">关于我们</text>
     <text class="color2">></text>
   </view>
-  <view class="content1 contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="content1 contact" style="width: 750rpx; height: 100rpx; display: flex; box-sizing: border-box">
     <text class="color1">分享给好友</text>
     <text class="color2">></text>
   </view>
-  <view class="content1 contact" style="width: 750rpx; height: 80rpx; display: flex; box-sizing: border-box">
+  <view class="content3 contact" style="width: 750rpx; height: 120rpx; display: flex; box-sizing: border-box" bindtap="BackToLogin">
     <text class="color1">退出登录</text>
     <text class="color2">></text>
   </view>

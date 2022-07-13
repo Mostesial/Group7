@@ -5,19 +5,16 @@
     "pages/start/login/login",
     "pages/start/reg/reg",
     "pages/start/agr/agr",
-
     "pages/knowledge/knowledge",
-
     "pages/remind/remind",
-
+    "pages/remind/todo/todo",
     "pages/me/me",
     "pages/me/collect/collect",
     "pages/me/idea/idea",
     "pages/me/name/name",
     "pages/me/setting/setting",
+    "pages/me/teaching/teaching",
     "pages/me/zhaohui/zhaohui",
-    
-    "pages/babez/babez",
     "pages/record/baby/excrete/excrete",
     "pages/record/baby/grow/grow",
     "pages/record/baby/nurse/nurse",
@@ -25,7 +22,10 @@
     "pages/record/mom/mood/mood",
     "pages/record/mom/sleep/sleep",
     "pages/record/mom/weight/weight",
-    "pages/record/mom/yuejing/yuejing"
+    "pages/record/mom/yuejing/yuejing",
+    "pages/record/record",
+    "pages/record/recordmom",
+    "pages/me/setting/info/info"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,5 +34,30 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/record/record",
+        "text": "record"
+      },
+      {
+        "pagePath": "pages/record/recordmom",
+        "text": "record"
+      },
+      {
+        "pagePath": "pages/remind/remind",
+        "text": "remind"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "knowledge"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "me"
+      }
+    ]
+  }
 }

@@ -1,0 +1,20 @@
+/* components/record/tabs.wxss */
+.tabs_title{
+  display: flex;
+  justify-content: space-around;
+  padding: 10rpx;
+}
+.title_item{
+  display: flex;
+  padding-left: 20rpx;
+  flex-wrap: nowrap;
+  font-size: 40rpx;
+  width: 200rpx;
+  height: 60rpx;
+  font-weight: bolder;
+  color:#333366;
+}
+.active{
+  height: 70rpx;
+  border-bottom:10rpx solid #ff3333;
+}
